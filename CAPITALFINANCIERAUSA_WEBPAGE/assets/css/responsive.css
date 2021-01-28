@@ -1,0 +1,582 @@
+/* Medium Layout: 1280px. */
+@media only screen and (min-width: 992px) and (max-width: 1200px) { 
+
+    .project-text {
+        width: 45%;
+    }
+    
+}
+/* Tablet Layout: 768px. */
+@media only screen and (min-width: 768px) and (max-width: 991px) { 
+
+    .finance-logo > a > img{
+        display: block;
+        margin: 0 auto
+    }
+    .finance-mainmenu ul{
+        text-align: center
+    }
+    .header-top-language, .header-top-right{
+        text-align: center;
+        margin: 10px 0;
+        float: none
+    }
+    header .finance-logo::before{
+        right: -150px;
+        transform: skewX(0deg);
+    }
+    .service-left{
+        display: none
+    }
+    .service-right {
+        padding-left: 30px
+    }
+    .service-box{
+        background: #fff none repeat scroll 0 0
+    }
+    .about-right{
+        margin-top: 50px
+    }
+    .project-text {
+        margin-top: -70px;
+        width: 70%; 
+    }
+    .skew-overlay{
+        display: none
+    }
+    .finance-faqs-right{
+        float: none;
+        margin-top: 50px;
+        width: 100%;
+    }
+    .textimonial-text > i, .testimonial-img > i{
+        display: none
+    }
+    .textimonial-text{
+        margin-top: 40px;
+        text-align: center
+    }
+    .advisor-social > ul{
+        left: 28%;
+        top: 45%;
+    }
+    .single-footer{
+        margin: 30px 0
+    }
+    .graph-right{
+        margin-top: 50px
+    }
+    .single-service-right{
+        margin-top: 50px
+    }
+    #pro_2{
+        margin-bottom:30px
+    }
+    .details-project-text > p{
+        margin-top: 0
+    }
+    .details-pro-left {
+        margin-top: 50px
+    }
+    .finance-default-news-text{
+        padding: 20px
+    }
+    .finance-news-sidebar {
+        margin-top: 50px
+    }
+    .right-blog{
+        margin-top: 0
+    }
+    .single-news-default{
+        margin-top: 50px
+    }
+    .left-default {
+        margin-top: 0
+    }
+    .single-news-author{
+        padding: 20px
+    }
+    .news-author-img{
+        height: 120px;
+        width: 120px;
+    }
+    .single-comment-item img{
+        margin: 0 0 20px
+    }
+    .coupon-cart-right > a{
+        margin-right: 0
+    }
+    .proceed-checkout > a{
+        margin-right: 0
+    }
+    .finance-login {
+        margin-top: 50px
+    }
+    .finance-contact-form-right{
+        margin-top: 50px
+    }
+    .weekly-subscribe form{
+        width: 75%
+    }
+    .head-service-left .single-service, .head-service-right{
+        margin-top: 0
+    }
+    
+}
+/* Mobile Layout: 320px. */
+@media only screen and (max-width: 767px) { 
+
+    .header-top-language, .header-top-right{
+        text-align: center;
+        margin: 10px 0
+    }
+    .finance-caption-cell{
+        text-align: center
+    }
+    .single-top-right{
+        margin: 5px 0
+    }
+    .finance-mainmenu{
+        display: none
+    }
+    .finance-responsive-menu{
+        display: block
+    }
+    header .finance-logo::before{
+        right: 125px;
+    }
+    header .finance-logo:before{
+        height: 102%
+    }
+    .seacrh_li{
+        display: none !important
+    }
+    .service-right {
+        margin-top: 165px;
+        padding-left: 25px;
+    }
+    .service-box{
+        background: #fff url("../img/service-left.jpg") no-repeat scroll center 0
+    }
+    .service-left{
+        padding: 60px 60px 0;
+        width: 100%
+    }
+    .finance-main-slide{
+        height: 470px
+    }
+    .finance-service-area{
+        margin-top: -45px
+    }
+    .finance-main-caption h4{
+        font-size: 20px;
+        margin-bottom: 30px
+    }
+    .finance-main-caption h2{
+        font-size: 25px
+    }
+    .about-left > h3{
+        font-size: 24px;
+        line-height: 30px
+    }
+    .about-right{
+        margin-top: 40px
+    }
+    .project-text {
+        box-shadow: 0 0 0 rgba(49, 49, 49, 0.43);
+        margin-left: 0;
+        margin-top: 0;
+        padding: 15px;
+        width: 100%;
+    }
+    .finance-project-slide .owl-prev, .finance-project-slide .owl-next{
+        bottom: 0;
+    }
+    .finance-quotes-text > h2{
+        font-size: 20px;
+        line-height: 30px;
+        margin-bottom: 15px
+    }
+    .finance-quotes-text > p{
+        padding: 0
+    }
+    .skew-overlay{
+        display: none
+    }
+    .finance-faqs-right{
+        float: none;
+        width: 100%;
+        margin-top: 40px
+    }
+    .textimonial-text > i, .testimonial-img > i{
+        display: none
+    }
+    .textimonial-text{
+        margin-top: 30px;
+        text-align: center
+    }
+    .advisor-social > ul{
+        left: 25%;
+        top: 45%
+    }
+    .single-footer{
+        margin: 50px 0
+    }
+    .copyright-right, .copyright-left{
+        text-align: center
+    }
+    .breadcromb-left{
+        text-align: center
+    }
+    .breadcromb-right{
+        margin-top: 10px;
+        text-align: center
+    }
+    .graph-right{
+        margin-top: 40px
+    }
+    .single-service-right{
+        margin-top: 50px
+    }
+    #pro_2{
+        margin-bottom: 30px
+    }
+    .project-btn > a{
+        display: block;
+        font-size: 16px;
+        margin: 10px
+    }
+    .element-item{
+        width: 100%
+    }
+    .details-project-text > p{
+        margin-top: 0
+    }
+    .details-pro-left {
+        margin-top: 40px;
+    }
+    .finance-default-news-text{
+        padding: 20px 0
+    }
+    .post-share{
+        text-align: center
+    }
+    .post-comment-like{
+        text-align: center;
+        margin-top: 20px
+    }
+    .finance-news-sidebar {
+        margin-top: 50px;
+    }
+    .right-blog{
+        margin-top: 0px
+    }
+    .single-news-default{
+        margin-bottom: 0;
+        margin-top: 0px
+    }
+    .left-default {
+        margin-bottom: 30px;
+        margin-top: 0;
+    }
+    .single-news-text blockquote{
+        padding: 35px
+    }
+    .remember {
+        text-align: center;
+    }
+    .forgot{
+        text-align: center
+    }
+    .register-form a{
+        float: none
+    }
+    .single-news-author{
+        padding: 15px
+    }
+    .news-author-img{
+        width: 120px;
+        height: 120px;
+        margin-right: 20px
+    }
+    .news-author-text{
+        padding: 0
+    }
+    .single-comment-item img{
+        margin: 0 0 20px
+    }
+    .comment-list ul ul{
+        margin-left: 55px
+    }
+    .finance-leave-comment input[type="text"], .finance-leave-comment input[type="email"]{
+        width: 100%
+    }
+    .finance-leave-comment textarea{
+        width: 100%
+    }
+    .shorting-left, .shorting-right{
+        text-align: center
+    }
+    .single-shop-text {
+        margin-top: 15px;
+    }
+    .coupon-cart-right, .coupon-cart-left{
+        text-align: center
+    }
+    .coupon-cart-right > a{
+        margin-right: 0;
+        margin-top: 20px
+    }
+    .single-shipping input{
+        margin: 10px 0
+    }
+    .proceed-checkout{
+        text-align: center
+    }
+    .proceed-checkout > a{
+        margin-right: 0
+    }
+    .checkout-form-right {
+        margin-top: 40px;
+    }
+    .finance-login {
+        margin-top: 40px;
+    }
+    .finance-contact-form-right{
+        margin-top: 40px
+    }
+    .contact3-page-details {
+        margin-top: 40px;
+    }
+    .single-contact-right{
+        margin-bottom: 20px
+    }
+    .head-service-left .single-service, .head-service-right{
+        margin-top: 0
+    }
+
+    
+}
+/* Wide Mobile Layout: 480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) { 
+
+    .header-top-language, .header-top-right{
+        text-align: center;
+        margin: 10px 0
+    }
+    .finance-caption-cell{
+        text-align: center
+    }
+    .single-top-right{
+        margin: 5px 0
+    }
+    .finance-mainmenu{
+        display: none
+    }
+    .finance-responsive-menu{
+        display: block
+    }
+    header .finance-logo::before{
+        right: 225px;
+    }
+    header .finance-logo:before{
+        height: 102%
+    }
+    .seacrh_li{
+        display: none !important
+    }
+    .service-right {
+        margin-top: 0px;
+        padding-left: 25px;
+    }
+    .service-box{
+        background: #fff none repeat scroll 0 0
+    }
+    .finance-main-slide{
+        height: 470px
+    }
+    .finance-service-area{
+        margin-top: -45px
+    }
+    .finance-main-caption h4{
+        font-size: 22px;
+        margin-bottom: 30px
+    }
+    .finance-main-caption h2{
+        font-size: 30px
+    }
+    .about-left > h3{
+        font-size: 24px;
+        line-height: 30px
+    }
+    .about-right{
+        margin-top: 40px
+    }
+    .project-text {
+        box-shadow: 0 0 0 rgba(49, 49, 49, 0.43);
+        margin-left: 0;
+        margin-top: 0;
+        padding: 25px;
+        width: 100%;
+    }
+    .finance-project-slide .owl-prev, .finance-project-slide .owl-next{
+        bottom: 0;
+    }
+    .finance-quotes-text > h2{
+        font-size: 24px;
+        line-height: 30px;
+        margin-bottom: 15px
+    }
+    .finance-quotes-text > p{
+        padding: 0
+    }
+    .skew-overlay{
+        display: none
+    }
+    .finance-faqs-right{
+        float: none;
+        width: 100%;
+        margin-top: 40px
+    }
+    .textimonial-text > i, .testimonial-img > i{
+        display: none
+    }
+    .textimonial-text{
+        margin-top: 30px;
+        text-align: center
+    }
+    .advisor-social > ul{
+        left: 37%;
+        top: 45%
+    }
+    .single-footer{
+        margin: 50px 0
+    }
+    .copyright-right, .copyright-left{
+        text-align: center
+    }
+    .breadcromb-left{
+        text-align: center
+    }
+    .breadcromb-right{
+        margin-top: 10px;
+        text-align: center
+    }
+    .graph-right{
+        margin-top: 40px
+    }
+    .single-service-right{
+        margin-top: 50px
+    }
+    #pro_2{
+        margin-bottom: 30px
+    }
+    .project-btn > a{
+        display: block;
+        font-size: 16px;
+        margin: 10px
+    }
+    .element-item{
+        width: 100%
+    }
+    .details-project-text > p{
+        margin-top: 0
+    }
+    .details-pro-left {
+        margin-top: 40px;
+    }
+    .finance-default-news-text{
+        padding: 20px 0
+    }
+    .post-share{
+        text-align: center
+    }
+    .post-comment-like{
+        text-align: center;
+        margin-top: 20px
+    }
+    .finance-news-sidebar {
+        margin-top: 50px;
+    }
+    .right-blog{
+        margin-top: 0px
+    }
+    .single-news-default{
+        margin-bottom: 0;
+        margin-top: 30px
+    }
+    .left-default {
+        margin-bottom: 30px;
+        margin-top: 0;
+    }
+    .single-news-text blockquote{
+        padding: 35px
+    }
+    .single-news-author{
+        padding: 15px
+    }
+    .news-author-img{
+        width: 120px;
+        height: 120px;
+        margin-right: 20px
+    }
+    .news-author-text{
+        padding: 0
+    }
+    .single-comment-item img{
+        margin: 0 0 20px
+    }
+    .comment-list ul ul{
+        margin-left: 55px
+    }
+    .finance-leave-comment input[type="text"], .finance-leave-comment input[type="email"]{
+        width: 100%
+    }
+    .finance-leave-comment textarea{
+        width: 100%
+    }
+    .shorting-left, .shorting-right{
+        text-align: center
+    }
+    .single-shop-text {
+        margin-top: 15px;
+    }
+    .coupon-cart-right, .coupon-cart-left{
+        text-align: center
+    }
+    .coupon-cart-right > a{
+        margin-right: 0;
+        margin-top: 20px
+    }
+    .single-shipping input{
+        margin: 10px 0
+    }
+    .proceed-checkout{
+        text-align: center
+    }
+    .proceed-checkout > a{
+        margin-right: 0
+    }
+    .checkout-form-right {
+        margin-top: 40px;
+    }
+    .finance-login {
+        margin-top: 40px;
+    }
+    .finance-contact-form-right{
+        margin-top: 40px
+    }
+    .contact3-page-details {
+        margin-top: 40px;
+    }
+    .service-left{
+        display: none
+    }
+    .single-contact-right{
+        margin-bottom: 20px
+    }
+    .head-service-left .single-service, .head-service-right{
+        margin-top: 0
+    }
+
+}

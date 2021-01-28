@@ -1,0 +1,106 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>fancyBox: Abrir imágenes, páginas web y videos en ventanas tipo Popup con jQuery</title>
+<script type="text/javascript" src="../js/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="../js/jquery.fancybox.pack.js"></script>
+<link rel="stylesheet" type="text/css" href="../js/jquery.fancybox.css" />
+<script type="text/javascript"> 
+$(document).ready(function(){
+	$(".ejemplo_1").fancybox({
+		helpers: {
+			title : {
+				type : 'float'
+			}
+		}
+	});
+	$(".ejemplo_2").fancybox({
+		helpers: {
+			title : {
+				type : 'float'
+			}
+		}
+	});
+	$(".ejemplo_3").fancybox({
+		openEffect	: 'none',
+		closeEffect	: 'none'
+	});
+	$(".ejemplo_4").fancybox({
+		'autoScale'			: false,
+		'transitionIn'		: 'none',
+		'transitionOut'		: 'none',
+		'width'				: 680,
+		'height'			: 450,
+		'type'				: 'iframe'
+	});
+});
+</script>
+<style type="text/css">
+
+.html, body {
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:12px;
+}
+
+.espacio10 {
+	height:10px;
+	clear:both;
+}
+
+.inicio {
+	width:700px;
+	height:100%;
+	padding:0px;
+	margin:0px auto 0px auto;
+}
+
+.ejemplos {
+	float:left;
+	width:100%;
+}
+
+.ejemplos img {
+	float:left;
+	border:1px solid #999;
+	margin-right:15px;
+}
+
+</style>
+</head>
+<body>
+<div class="inicio">
+<div class="ejemplos">
+<b>Imagen simple 1</b>
+<br /><br />
+<a class="ejemplo_1" href="../img/foto1.jpg" title="Imagen simple"><img src="../img/foto1p.jpg" width="200" height="150" /></a>
+<div class="espacio10"></div>
+<hr />
+<div class="espacio10"></div>
+<b>Imagen simple 2</b>
+<br /><br />
+<a class="ejemplo_2" href="../img/foto2.jpg" title="Imagen simple"><img src="../img/foto2p.jpg" width="200" height="150" /></a>
+<div class="espacio10"></div>
+<hr />
+<div class="espacio10"></div>
+<b>Galería de imágenes 1</b>
+<br /><br />
+<a class="ejemplo_3" rel="galeria_1" href="../img/foto3.jpg" title="Imagen 1 de 3"><img src="../img/foto3p.jpg" width="200" height="150" /></a>
+<a class="ejemplo_3" rel="galeria_1" href="../img/foto4.jpg" title="Imagen 2 de 3"><img src="../img/foto4p.jpg" width="200" height="150" /></a>
+<a class="ejemplo_3" rel="galeria_1" href="../img/foto5.jpg" title="Imagen 3 de 3"><img src="../img/foto5p.jpg" width="200" height="150" /></a>
+<div class="espacio10"></div>
+<hr />
+<div class="espacio10"></div>
+<b><a class="ejemplo_4" href="index_boton.html">Abrir página web externa - ejemplo.html</a></b>
+<div class="espacio10"></div>
+<hr />
+<div class="espacio10"></div>
+<b><a class="ejemplo_4" href="http://www.youtube.com/embed/L9szn1QQfas?autoplay=1">Abrir video externo - Youtube</a></b>
+<div class="espacio10"></div>
+<hr />
+<div class="espacio10"></div>
+</div>
+</div>
+</body>
+</html>

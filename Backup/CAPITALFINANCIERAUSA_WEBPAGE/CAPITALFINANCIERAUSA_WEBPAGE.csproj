@@ -1,0 +1,1677 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{37EABC78-838A-40A2-B385-191EFA6BDA7D}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CAPITALFINANCIERAUSA_WEBPAGE</RootNamespace>
+    <AssemblyName>CAPITALFINANCIERAUSA_WEBPAGE</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ext.Net">
+      <HintPath>..\References\Ext.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="Ext.Net.Utilities">
+      <HintPath>..\References\Ext.Net.Utilities.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\References\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Transformer.NET">
+      <HintPath>..\References\Transformer.NET.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="admin\assets\img\controles\AbrirDisabled.png" />
+    <Content Include="admin\assets\img\controles\AbrirNormal.png" />
+    <Content Include="admin\assets\img\controles\AbrirOver.png" />
+    <Content Include="admin\assets\img\controles\AbrirPressed.png" />
+    <Content Include="admin\assets\img\controles\adjuntoDisabled.png" />
+    <Content Include="admin\assets\img\controles\adjuntoNormal.png" />
+    <Content Include="admin\assets\img\controles\adjuntoOver.png" />
+    <Content Include="admin\assets\img\controles\adjuntoPressed.png" />
+    <Content Include="admin\assets\img\controles\AfectarDisabled.png" />
+    <Content Include="admin\assets\img\controles\AfectarNormal.png" />
+    <Content Include="admin\assets\img\controles\AfectarOver.png" />
+    <Content Include="admin\assets\img\controles\AfectarPressed.png" />
+    <Content Include="admin\assets\img\controles\AnteriorDisabled.png" />
+    <Content Include="admin\assets\img\controles\AnteriorNormal.png" />
+    <Content Include="admin\assets\img\controles\AnteriorOver.png" />
+    <Content Include="admin\assets\img\controles\AnteriorPressed.png" />
+    <Content Include="admin\assets\img\controles\AutorizarDisabled.png" />
+    <Content Include="admin\assets\img\controles\AutorizarNormal.png" />
+    <Content Include="admin\assets\img\controles\AutorizarOver.png" />
+    <Content Include="admin\assets\img\controles\AutorizarPressed.png" />
+    <Content Include="admin\assets\img\controles\back.png" />
+    <Content Include="admin\assets\img\controles\bajar.png" />
+    <Content Include="admin\assets\img\controles\btnRegresar.png" />
+    <Content Include="admin\assets\img\controles\btnRegresarOver.png" />
+    <Content Include="admin\assets\img\controles\btnRegresarPressed.png" />
+    <Content Include="admin\assets\img\controles\Cancelar.png" />
+    <Content Include="admin\assets\img\controles\CancelarDisabled.png" />
+    <Content Include="admin\assets\img\controles\CancelarOver.png" />
+    <Content Include="admin\assets\img\controles\CancelarPressed.png" />
+    <Content Include="admin\assets\img\controles\CleanDisabled.png" />
+    <Content Include="admin\assets\img\controles\CleanHover.png" />
+    <Content Include="admin\assets\img\controles\cleanNormal.png" />
+    <Content Include="admin\assets\img\controles\cleanPressed.png" />
+    <Content Include="admin\assets\img\controles\croquis.png" />
+    <Content Include="admin\assets\img\controles\delete-disable.png" />
+    <Content Include="admin\assets\img\controles\delete-normal.png" />
+    <Content Include="admin\assets\img\controles\delete-over.png" />
+    <Content Include="admin\assets\img\controles\delete-pressed.png" />
+    <Content Include="admin\assets\img\controles\delete.png" />
+    <Content Include="admin\assets\img\controles\edit-disable.png" />
+    <Content Include="admin\assets\img\controles\edit-normal.png" />
+    <Content Include="admin\assets\img\controles\edit-over.png" />
+    <Content Include="admin\assets\img\controles\edit-pressed.png" />
+    <Content Include="admin\assets\img\controles\edit.png" />
+    <Content Include="admin\assets\img\controles\EnviarDisabled.png" />
+    <Content Include="admin\assets\img\controles\EnviarNormal.png" />
+    <Content Include="admin\assets\img\controles\EnviarOver.png" />
+    <Content Include="admin\assets\img\controles\EnviarPressed.png" />
+    <Content Include="admin\assets\img\controles\EST.png" />
+    <Content Include="admin\assets\img\controles\EstCost.png" />
+    <Content Include="admin\assets\img\controles\ExcelDisabled.png" />
+    <Content Include="admin\assets\img\controles\ExcelNormal.png" />
+    <Content Include="admin\assets\img\controles\ExcelOver.png" />
+    <Content Include="admin\assets\img\controles\ExcelPressed.png" />
+    <Content Include="admin\assets\img\controles\fact.png" />
+    <Content Include="admin\assets\img\controles\factdo.png" />
+    <Content Include="admin\assets\img\controles\factred.png" />
+    <Content Include="admin\assets\img\controles\facturas.png" />
+    <Content Include="admin\assets\img\controles\GaleriaDisabled.png" />
+    <Content Include="admin\assets\img\controles\GaleriaNormal.png" />
+    <Content Include="admin\assets\img\controles\GaleriaOver.png" />
+    <Content Include="admin\assets\img\controles\GaleriaPressed.png" />
+    <Content Include="admin\assets\img\controles\generador.png" />
+    <Content Include="admin\assets\img\controles\Guardar.png" />
+    <Content Include="admin\assets\img\controles\GuardarDisabled.png" />
+    <Content Include="admin\assets\img\controles\GuardarOver.png" />
+    <Content Include="admin\assets\img\controles\GuardarPressed.png" />
+    <Content Include="admin\assets\img\controles\home.png" />
+    <Content Include="admin\assets\img\controles\imagenes.png" />
+    <Content Include="admin\assets\img\controles\ImprimirDisabled.png" />
+    <Content Include="admin\assets\img\controles\ImprimirNormal.png" />
+    <Content Include="admin\assets\img\controles\ImprimirOver.png" />
+    <Content Include="admin\assets\img\controles\ImprimirPressed.png" />
+    <Content Include="admin\assets\img\controles\InfoDisabled.png" />
+    <Content Include="admin\assets\img\controles\InfoNormal.png" />
+    <Content Include="admin\assets\img\controles\InfoOver.png" />
+    <Content Include="admin\assets\img\controles\InfoPressed.png" />
+    <Content Include="admin\assets\img\controles\key.png" />
+    <Content Include="admin\assets\img\controles\left-nav.png" />
+    <Content Include="admin\assets\img\controles\login-hover.png" />
+    <Content Include="admin\assets\img\controles\login-pressed.png" />
+    <Content Include="admin\assets\img\controles\login.png" />
+    <Content Include="admin\assets\img\controles\login2.png" />
+    <Content Include="admin\assets\img\controles\login2Hover.png" />
+    <Content Include="admin\assets\img\controles\login2Pressed.png" />
+    <Content Include="admin\assets\img\controles\new.png" />
+    <Content Include="admin\assets\img\controles\nuevo-disable.png" />
+    <Content Include="admin\assets\img\controles\nuevo-normal.png" />
+    <Content Include="admin\assets\img\controles\nuevo-over.png" />
+    <Content Include="admin\assets\img\controles\nuevo-pressed.png" />
+    <Content Include="admin\assets\img\controles\pdfDisabled.png" />
+    <Content Include="admin\assets\img\controles\pdfNormal.png" />
+    <Content Include="admin\assets\img\controles\pdfOver.png" />
+    <Content Include="admin\assets\img\controles\pdfPressed.png" />
+    <Content Include="admin\assets\img\controles\PRE.png" />
+    <Content Include="admin\assets\img\controles\PrimeroDisabled.png" />
+    <Content Include="admin\assets\img\controles\PrimeroNormal.png" />
+    <Content Include="admin\assets\img\controles\PrimeroOver.png" />
+    <Content Include="admin\assets\img\controles\PrimeroPressed.png" />
+    <Content Include="admin\assets\img\controles\RES.png" />
+    <Content Include="admin\assets\img\controles\rev.png" />
+    <Content Include="admin\assets\img\controles\rhome.png" />
+    <Content Include="admin\assets\img\controles\right-nav.png" />
+    <Content Include="admin\assets\img\controles\rkey.png" />
+    <Content Include="admin\assets\img\controles\rsofa.png" />
+    <Content Include="admin\assets\img\controles\SaveDisabled.png" />
+    <Content Include="admin\assets\img\controles\SaveNormal.png" />
+    <Content Include="admin\assets\img\controles\SaveOver.png" />
+    <Content Include="admin\assets\img\controles\SavePressed.png" />
+    <Content Include="admin\assets\img\controles\Search.png" />
+    <Content Include="admin\assets\img\controles\SiguienteDisabled.png" />
+    <Content Include="admin\assets\img\controles\SiguienteNormal.png" />
+    <Content Include="admin\assets\img\controles\SiguienteOver.png" />
+    <Content Include="admin\assets\img\controles\SiguientePressed.png" />
+    <Content Include="admin\assets\img\controles\sofa.png" />
+    <Content Include="admin\assets\img\controles\UltimoDisabled.png" />
+    <Content Include="admin\assets\img\controles\UltimoNormal.png" />
+    <Content Include="admin\assets\img\controles\UltimoOver.png" />
+    <Content Include="admin\assets\img\controles\UltimoPressed.png" />
+    <Content Include="admin\assets\img\controles\update-disable - copia.png" />
+    <Content Include="admin\assets\img\controles\update-disable.png" />
+    <Content Include="admin\assets\img\controles\update-hover - copia.png" />
+    <Content Include="admin\assets\img\controles\update-hover.png" />
+    <Content Include="admin\assets\img\controles\update-normal - copia.png" />
+    <Content Include="admin\assets\img\controles\update-normal.png" />
+    <Content Include="admin\assets\img\controles\update-pressed.png" />
+    <Content Include="admin\assets\img\controles\update.png" />
+    <Content Include="admin\assets\img\controles\vp.png" />
+    <Content Include="admin\css\customControls2.css" />
+    <Content Include="admin\css\login2.css" />
+    <Content Include="admin\Default.aspx" />
+    <Content Include="admin\Estatus.aspx" />
+    <Content Include="admin\FormaCambiarContrasena.aspx" />
+    <Content Include="admin\FormaImagenesProyecto.aspx" />
+    <Content Include="admin\FormaInversion.aspx" />
+    <Content Include="admin\FormaMultiImagenesProyecto.aspx" />
+    <Content Include="admin\FormaProyecto.aspx" />
+    <Content Include="admin\FormaVerImagenProyecto.aspx" />
+    <Content Include="admin\FormaUsuario.aspx" />
+    <Content Include="admin\Global.asax" />
+    <Content Include="admin\Inversiones.aspx" />
+    <Content Include="admin\js\cambiarContrasena.js" />
+    <Content Include="admin\js\default.js" />
+    <Content Include="admin\js\imagenesproyectos.js" />
+    <Content Include="admin\js\inversiones.js" />
+    <Content Include="admin\js\login.js" />
+    <Content Include="admin\js\menu-usuario.js" />
+    <Content Include="admin\js\multiimagenesproyectos.js" />
+    <Content Include="admin\js\olvidarContrasena.js" />
+    <Content Include="admin\js\proyectos.js" />
+    <Content Include="admin\js\usuarios.js" />
+    <Content Include="admin\Login.aspx" />
+    <Content Include="admin\Menu.aspx" />
+    <Content Include="admin\OlvidasteContrasena.aspx" />
+    <Content Include="admin\Proyectos.aspx" />
+    <Content Include="admin\Usuarios.aspx" />
+    <Content Include="assets\calculadora\css\bootstrap-slider.css">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\calculadora\css\bootstrap-slider.min.css">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\calculadora\css\bootstrap-theme.css">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\calculadora\css\bootstrap-theme.min.css">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\calculadora\css\bootstrap.css">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\calculadora\css\bootstrap.min.css">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\calculadora\css\financiera.css">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\calculadora\css\font-awesome.css">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\calculadora\css\font-awesome.min.css">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\calculadora\css\full-slider.css">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\calculadora\css\jquery.carousel.fullscreen.css">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\calculadora\galeria\1.jpg" />
+    <Content Include="assets\calculadora\galeria\2.jpg" />
+    <Content Include="assets\calculadora\icons\contenedor-total-igual.png" />
+    <Content Include="assets\calculadora\icons\contenedor-total-mas.png" />
+    <Content Include="assets\calculadora\icons\contenedor-total.png" />
+    <Content Include="assets\calculadora\icons\divisor.png" />
+    <Content Include="assets\calculadora\icons\divisor2.png" />
+    <Content Include="assets\calculadora\icons\icono-mas.png" />
+    <Content Include="assets\calculadora\icons\icono-menos.png" />
+    <Content Include="assets\calculadora\icons\slider-handler.png" />
+    <Content Include="assets\calculadora\js\bootstrap-slider.min.js" />
+    <Content Include="assets\calculadora\js\bootstrap.js" />
+    <Content Include="assets\calculadora\js\bootstrap.min.js" />
+    <Content Include="assets\calculadora\js\financieraexpansion.js" />
+    <Content Include="assets\calculadora\js\jquery-1.11.3.min.js" />
+    <Content Include="assets\calculadora\js\jquery.carousel.fullscreen.js" />
+    <Content Include="assets\calculadora\js\npm.js" />
+    <Content Include="assets\css\animate.min.css" />
+    <Content Include="assets\css\bootmetro-icons.css" />
+    <Content Include="assets\css\bootmetro-responsive.css" />
+    <Content Include="assets\css\bootmetro-ui-light.css" />
+    <Content Include="assets\css\bootmetro.css" />
+    <Content Include="assets\css\bootmetro2.css" />
+    <Content Include="assets\css\bootstrap.min.css" />
+    <Content Include="assets\css\custom.css" />
+    <Content Include="assets\css\demo.css" />
+    <Content Include="assets\css\demo2.css" />
+    <Content Include="assets\css\font-awesome.min.css" />
+    <Content Include="assets\css\magnific-popup.css" />
+    <Content Include="assets\css\owl.carousel.css" />
+    <Content Include="assets\css\owl.video.play.html" />
+    <Content Include="assets\css\responsive.css" />
+    <Content Include="assets\css\slicknav.min.css" />
+    <Content Include="assets\css\style.css" />
+    <Content Include="assets\fonts\fontawesome-webfont3e6e.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\fonts\glyphicons-halflings-regular.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\font\icomoon.dev.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\font\IcoMoon.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\img\calculadora\contenedor-total-igual.png" />
+    <Content Include="assets\img\calculadora\contenedor-total-mas.png" />
+    <Content Include="assets\img\calculadora\contenedor-total.png" />
+    <Content Include="assets\img\calculadora\divisor.png" />
+    <Content Include="assets\img\calculadora\icono-mas.png" />
+    <Content Include="assets\img\calculadora\icono-menos.png" />
+    <Content Include="assets\img\calculadora\slider-handler.png" />
+    <Content Include="assets\img\casa1\casa1_antes-01.jpg" />
+    <Content Include="assets\img\casa1\casa1_antes-02.jpg" />
+    <Content Include="assets\img\casa1\casa1_antes-03.jpg" />
+    <Content Include="assets\img\casa1\casa1_antes-04.jpg" />
+    <Content Include="assets\img\casa1\casa1_despues-01.jpg" />
+    <Content Include="assets\img\casa1\casa1_despues-02.jpg" />
+    <Content Include="assets\img\casa1\casa1_despues-03.jpg" />
+    <Content Include="assets\img\casa1\casa1_despues-04.jpg" />
+    <Content Include="assets\img\casa1\casa1_despues-05.jpg" />
+    <Content Include="assets\img\casa2\casa2_antes-02.jpg" />
+    <Content Include="assets\img\casa2\casa2_antes-03.jpg" />
+    <Content Include="assets\img\casa2\casa2_antes-04.jpg" />
+    <Content Include="assets\img\casa2\casa2_antes-05.jpg" />
+    <Content Include="assets\img\casa2\casa2_despues-01.jpg" />
+    <Content Include="assets\img\casa2\casa2_despues-02.jpg" />
+    <Content Include="assets\img\casa2\casa2_despues-03.jpg" />
+    <Content Include="assets\img\casa2\casa2_despues-04.jpg" />
+    <Content Include="assets\img\close.png" />
+    <Content Include="assets\img\contacto\contacto.jpg" />
+    <Content Include="assets\img\controles\AbrirDisabled.png" />
+    <Content Include="assets\img\controles\AbrirNormal.png" />
+    <Content Include="assets\img\controles\AbrirOver.png" />
+    <Content Include="assets\img\controles\AbrirPressed.png" />
+    <Content Include="assets\img\controles\adjuntoDisabled.png" />
+    <Content Include="assets\img\controles\adjuntoNormal.png" />
+    <Content Include="assets\img\controles\adjuntoOver.png" />
+    <Content Include="assets\img\controles\adjuntoPressed.png" />
+    <Content Include="assets\img\controles\AfectarDisabled.png" />
+    <Content Include="assets\img\controles\AfectarNormal.png" />
+    <Content Include="assets\img\controles\AfectarOver.png" />
+    <Content Include="assets\img\controles\AfectarPressed.png" />
+    <Content Include="assets\img\controles\AnteriorDisabled.png" />
+    <Content Include="assets\img\controles\AnteriorNormal.png" />
+    <Content Include="assets\img\controles\AnteriorOver.png" />
+    <Content Include="assets\img\controles\AnteriorPressed.png" />
+    <Content Include="assets\img\controles\AutorizarDisabled.png" />
+    <Content Include="assets\img\controles\AutorizarNormal.png" />
+    <Content Include="assets\img\controles\AutorizarOver.png" />
+    <Content Include="assets\img\controles\AutorizarPressed.png" />
+    <Content Include="assets\img\controles\back.png" />
+    <Content Include="assets\img\controles\bajar.png" />
+    <Content Include="assets\img\controles\btnRegresar.png" />
+    <Content Include="assets\img\controles\btnRegresarOver.png" />
+    <Content Include="assets\img\controles\btnRegresarPressed.png" />
+    <Content Include="assets\img\controles\Cancelar.png" />
+    <Content Include="assets\img\controles\CancelarDisabled.png" />
+    <Content Include="assets\img\controles\CancelarOver.png" />
+    <Content Include="assets\img\controles\CancelarPressed.png" />
+    <Content Include="assets\img\controles\CleanDisabled.png" />
+    <Content Include="assets\img\controles\CleanHover.png" />
+    <Content Include="assets\img\controles\cleanNormal.png" />
+    <Content Include="assets\img\controles\cleanPressed.png" />
+    <Content Include="assets\img\controles\croquis.png" />
+    <Content Include="assets\img\controles\delete-disable.png" />
+    <Content Include="assets\img\controles\delete-normal.png" />
+    <Content Include="assets\img\controles\delete-over.png" />
+    <Content Include="assets\img\controles\delete-pressed.png" />
+    <Content Include="assets\img\controles\delete.png" />
+    <Content Include="assets\img\controles\edit-disable.png" />
+    <Content Include="assets\img\controles\edit-normal.png" />
+    <Content Include="assets\img\controles\edit-over.png" />
+    <Content Include="assets\img\controles\edit-pressed.png" />
+    <Content Include="assets\img\controles\edit.png" />
+    <Content Include="assets\img\controles\EnviarDisabled.png" />
+    <Content Include="assets\img\controles\EnviarNormal.png" />
+    <Content Include="assets\img\controles\EnviarOver.png" />
+    <Content Include="assets\img\controles\EnviarPressed.png" />
+    <Content Include="assets\img\controles\EST.png" />
+    <Content Include="assets\img\controles\EstCost.png" />
+    <Content Include="assets\img\controles\ExcelDisabled.png" />
+    <Content Include="assets\img\controles\ExcelNormal.png" />
+    <Content Include="assets\img\controles\ExcelOver.png" />
+    <Content Include="assets\img\controles\ExcelPressed.png" />
+    <Content Include="assets\img\controles\fact.png" />
+    <Content Include="assets\img\controles\factdo.png" />
+    <Content Include="assets\img\controles\factred.png" />
+    <Content Include="assets\img\controles\facturas.png" />
+    <Content Include="assets\img\controles\GaleriaDisabled.png" />
+    <Content Include="assets\img\controles\GaleriaNormal.png" />
+    <Content Include="assets\img\controles\GaleriaOver.png" />
+    <Content Include="assets\img\controles\GaleriaPressed.png" />
+    <Content Include="assets\img\controles\generador.png" />
+    <Content Include="assets\img\controles\Guardar.png" />
+    <Content Include="assets\img\controles\GuardarDisabled.png" />
+    <Content Include="assets\img\controles\GuardarOver.png" />
+    <Content Include="assets\img\controles\GuardarPressed.png" />
+    <Content Include="assets\img\controles\home.png" />
+    <Content Include="assets\img\controles\imagenes.png" />
+    <Content Include="assets\img\controles\ImprimirDisabled.png" />
+    <Content Include="assets\img\controles\ImprimirNormal.png" />
+    <Content Include="assets\img\controles\ImprimirOver.png" />
+    <Content Include="assets\img\controles\ImprimirPressed.png" />
+    <Content Include="assets\img\controles\InfoDisabled.png" />
+    <Content Include="assets\img\controles\InfoNormal.png" />
+    <Content Include="assets\img\controles\InfoOver.png" />
+    <Content Include="assets\img\controles\InfoPressed.png" />
+    <Content Include="assets\img\controles\key.png" />
+    <Content Include="assets\img\controles\left-nav.png" />
+    <Content Include="assets\img\controles\login-hover.png" />
+    <Content Include="assets\img\controles\login-pressed.png" />
+    <Content Include="assets\img\controles\login.png" />
+    <Content Include="assets\img\controles\login2.png" />
+    <Content Include="assets\img\controles\login2Hover.png" />
+    <Content Include="assets\img\controles\login2Pressed.png" />
+    <Content Include="assets\img\controles\new.png" />
+    <Content Include="assets\img\controles\nuevo-disable.png" />
+    <Content Include="assets\img\controles\nuevo-normal.png" />
+    <Content Include="assets\img\controles\nuevo-over.png" />
+    <Content Include="assets\img\controles\nuevo-pressed.png" />
+    <Content Include="assets\img\controles\pdfDisabled.png" />
+    <Content Include="assets\img\controles\pdfNormal.png" />
+    <Content Include="assets\img\controles\pdfOver.png" />
+    <Content Include="assets\img\controles\pdfPressed.png" />
+    <Content Include="assets\img\controles\PRE.png" />
+    <Content Include="assets\img\controles\PrimeroDisabled.png" />
+    <Content Include="assets\img\controles\PrimeroNormal.png" />
+    <Content Include="assets\img\controles\PrimeroOver.png" />
+    <Content Include="assets\img\controles\PrimeroPressed.png" />
+    <Content Include="assets\img\controles\RES.png" />
+    <Content Include="assets\img\controles\rev.png" />
+    <Content Include="assets\img\controles\rhome.png" />
+    <Content Include="assets\img\controles\right-nav.png" />
+    <Content Include="assets\img\controles\rkey.png" />
+    <Content Include="assets\img\controles\rsofa.png" />
+    <Content Include="assets\img\controles\SaveDisabled.png" />
+    <Content Include="assets\img\controles\SaveNormal.png" />
+    <Content Include="assets\img\controles\SaveOver.png" />
+    <Content Include="assets\img\controles\SavePressed.png" />
+    <Content Include="assets\img\controles\Search.png" />
+    <Content Include="assets\img\controles\SiguienteDisabled.png" />
+    <Content Include="assets\img\controles\SiguienteNormal.png" />
+    <Content Include="assets\img\controles\SiguienteOver.png" />
+    <Content Include="assets\img\controles\SiguientePressed.png" />
+    <Content Include="assets\img\controles\sofa.png" />
+    <Content Include="assets\img\controles\UltimoDisabled.png" />
+    <Content Include="assets\img\controles\UltimoNormal.png" />
+    <Content Include="assets\img\controles\UltimoOver.png" />
+    <Content Include="assets\img\controles\UltimoPressed.png" />
+    <Content Include="assets\img\controles\update-disable - copia.png" />
+    <Content Include="assets\img\controles\update-disable.png" />
+    <Content Include="assets\img\controles\update-hover - copia.png" />
+    <Content Include="assets\img\controles\update-hover.png" />
+    <Content Include="assets\img\controles\update-normal - copia.png" />
+    <Content Include="assets\img\controles\update-normal.png" />
+    <Content Include="assets\img\controles\update-pressed.png" />
+    <Content Include="assets\img\controles\update.png" />
+    <Content Include="assets\img\controles\vp.png" />
+    <Content Include="assets\img\estatus.png" />
+    <Content Include="assets\img\faqs.jpg" />
+    <Content Include="assets\img\img1.jpg" />
+    <Content Include="assets\img\img2.jpg" />
+    <Content Include="assets\img\img3.jpg" />
+    <Content Include="assets\img\inicio\30.jpg" />
+    <Content Include="assets\img\inicio\b1.jpg" />
+    <Content Include="assets\img\inicio\b2.jpg" />
+    <Content Include="assets\img\inicio\b3.jpg" />
+    <Content Include="assets\img\inicio\b4.jpg" />
+    <Content Include="assets\img\inicio\b5.jpg" />
+    <Content Include="assets\img\inicio\b6.jpg" />
+    <Content Include="assets\img\inicio\beneficios.jpg" />
+    <Content Include="assets\img\inicio\check.png" />
+    <Content Include="assets\img\inicio\invertir.jpg" />
+    <Content Include="assets\img\inicio\invierte-mexico.jpg" />
+    <Content Include="assets\img\inicio\invierte-mexico1.jpg" />
+    <Content Include="assets\img\inicio\invierte-USA.jpg" />
+    <Content Include="assets\img\inicio\invierte-USA1.jpg" />
+    <Content Include="assets\img\inicio\s1.jpg" />
+    <Content Include="assets\img\inicio\s2.jpg" />
+    <Content Include="assets\img\inicio\s3.jpg" />
+    <Content Include="assets\img\inversiones.png" />
+    <Content Include="assets\img\light-logo.png" />
+    <Content Include="assets\img\logo\favicon.png" />
+    <Content Include="assets\img\logo\logo.png" />
+    <Content Include="assets\img\logo\logo_aprendeyhaznegocios.jpg" />
+    <Content Include="assets\img\mascotte11.jpg" />
+    <Content Include="assets\img\mascottez.jpg" />
+    <Content Include="assets\img\proyectos.png" />
+    <Content Include="assets\img\proyectoseua\casa01.jpeg" />
+    <Content Include="assets\img\proyectoseua\casa02.jpeg" />
+    <Content Include="assets\img\proyectoseua\casa03.jpeg" />
+    <Content Include="assets\img\proyectosmexico\casa01.jpeg" />
+    <Content Include="assets\img\proyectosmexico\casa02.jpeg" />
+    <Content Include="assets\img\proyectosmexico\casa03.jpeg" />
+    <Content Include="assets\img\quienes-somos\confianza.jpg" />
+    <Content Include="assets\img\quienes-somos\garantia.jpg" />
+    <Content Include="assets\img\quienes-somos\grafica.jpg" />
+    <Content Include="assets\img\quienes-somos\grafica1.jpg" />
+    <Content Include="assets\img\quienes-somos\honestidad.jpg" />
+    <Content Include="assets\img\quienes-somos\s1.jpg" />
+    <Content Include="assets\img\quienes-somos\seguridad.jpg" />
+    <Content Include="assets\img\separador1.jpg" />
+    <Content Include="assets\img\separador2.jpg" />
+    <Content Include="assets\img\servicios\cortoplazo.jpg" />
+    <Content Include="assets\img\servicios\largoplazo.jpg" />
+    <Content Include="assets\img\servicios\largoplazo2.jpg" />
+    <Content Include="assets\img\tampa.jpg" />
+    <Content Include="assets\img\tampaz.jpg" />
+    <Content Include="assets\img\tavares11.jpg" />
+    <Content Include="assets\img\tavaresz.jpg" />
+    <Content Include="assets\img\unnamed.png" />
+    <Content Include="assets\img\usuarios.png" />
+    <Content Include="assets\js\active.js" />
+    <Content Include="assets\js\bootmetro-charms.js" />
+    <Content Include="assets\js\bootmetro-panorama.js" />
+    <Content Include="assets\js\bootmetro-pivot.js" />
+    <Content Include="assets\js\bootmetro.js" />
+    <Content Include="assets\js\bootstrap.min.js" />
+    <Content Include="assets\js\chart.js" />
+    <Content Include="assets\js\custom-isotop.js" />
+    <Content Include="assets\js\gmap.js" />
+    <Content Include="assets\js\isotope.pkgd.min.js" />
+    <Content Include="assets\js\jquery-1.10.0.js" />
+    <Content Include="assets\js\jquery.magnific-popup.min.js" />
+    <Content Include="assets\js\jquery.min.js" />
+    <Content Include="assets\js\jquery.mousewheel.min.js" />
+    <Content Include="assets\js\jquery.slicknav.min.js" />
+    <Content Include="assets\js\jquery.touchSwipe.min.js" />
+    <Content Include="assets\js\modernizr-2.6.2.min.js" />
+    <Content Include="assets\js\owl.carousel.min.js" />
+    <Content Include="calculadora.html" />
+    <Content Include="contacto.aspx" />
+    <Content Include="cortoplazo.jpg" />
+    <Content Include="css\all.css" />
+    <Content Include="css\all.min.css" />
+    <Content Include="css\bootstrap-slider.min.css" />
+    <Content Include="css\bootstrap.min.css.css" />
+    <Content Include="css\brands.css" />
+    <Content Include="css\brands.min.css" />
+    <Content Include="css\customControls.css" />
+    <Content Include="css\customControls2.css" />
+    <Content Include="css\customeControls.css" />
+    <Content Include="css\font-awesome.min.css" />
+    <Content Include="css\fontawesome.css" />
+    <Content Include="css\fontawesome.min.css" />
+    <Content Include="css\full-slider.css" />
+    <Content Include="css\login.css" />
+    <Content Include="css\login2.css" />
+    <Content Include="css\mdb.min.css" />
+    <Content Include="css\metroButtons.css" />
+    <Content Include="css\osef_bancomer.css" />
+    <Content Include="css\osef_cajapopular.css" />
+    <Content Include="css\osef_combobox.css" />
+    <Content Include="css\preliminar.css" />
+    <Content Include="css\registro.css" />
+    <Content Include="css\regular.css" />
+    <Content Include="css\regular.min.css" />
+    <Content Include="css\solid.css" />
+    <Content Include="css\solid.min.css" />
+    <Content Include="css\svg-with-js.css" />
+    <Content Include="css\svg-with-js.min.css" />
+    <Content Include="css\v4-shims.css" />
+    <Content Include="css\v4-shims.min.css" />
+    <Content Include="css\xButton.css" />
+    <Content Include="css\xComboBox.css" />
+    <Content Include="css\xCustomChart.css" />
+    <Content Include="css\xCustomFormPanel.css" />
+    <Content Include="css\xDatePicker.css" />
+    <Content Include="css\xDisplayImages.css" />
+    <Content Include="css\xFieldSet.css" />
+    <Content Include="css\xGridPanel.css" />
+    <Content Include="css\xHiperlink.css" />
+    <Content Include="css\xIcons.css" />
+    <Content Include="css\xLabel.css" />
+    <Content Include="css\xMask.css" />
+    <Content Include="css\xPanel.css" />
+    <Content Include="css\xSplitButton.css" />
+    <Content Include="css\xTabPanel.css" />
+    <Content Include="css\xTextField.css" />
+    <Content Include="css\xToolbar.css" />
+    <Content Include="css\xTreePanel.css" />
+    <Content Include="css\xWindowPopup.css" />
+    <Content Include="Easy-jQuery-Lightbox-Plugin-For-Image-Gallery-ion-zoom\css\ion.zoom.css" />
+    <Content Include="Easy-jQuery-Lightbox-Plugin-For-Image-Gallery-ion-zoom\css\normalize.min.css" />
+    <Content Include="Easy-jQuery-Lightbox-Plugin-For-Image-Gallery-ion-zoom\galeria1.html" />
+    <Content Include="Easy-jQuery-Lightbox-Plugin-For-Image-Gallery-ion-zoom\img\ion.zoom.preloader.gif" />
+    <Content Include="Easy-jQuery-Lightbox-Plugin-For-Image-Gallery-ion-zoom\img\zoom\carol_1.jpg" />
+    <Content Include="Easy-jQuery-Lightbox-Plugin-For-Image-Gallery-ion-zoom\img\zoom\carol_1_1.jpg" />
+    <Content Include="Easy-jQuery-Lightbox-Plugin-For-Image-Gallery-ion-zoom\img\zoom\carol_2.jpg" />
+    <Content Include="Easy-jQuery-Lightbox-Plugin-For-Image-Gallery-ion-zoom\img\zoom\carol_2_2.jpg" />
+    <Content Include="Easy-jQuery-Lightbox-Plugin-For-Image-Gallery-ion-zoom\img\zoom\carol_3.jpg" />
+    <Content Include="Easy-jQuery-Lightbox-Plugin-For-Image-Gallery-ion-zoom\img\zoom\carol_3_3.jpg" />
+    <Content Include="Easy-jQuery-Lightbox-Plugin-For-Image-Gallery-ion-zoom\img\zoom\carol_4.jpg" />
+    <Content Include="Easy-jQuery-Lightbox-Plugin-For-Image-Gallery-ion-zoom\img\zoom\carol_4_4.jpg" />
+    <Content Include="Easy-jQuery-Lightbox-Plugin-For-Image-Gallery-ion-zoom\img\zoom\carol_5.jpg" />
+    <Content Include="Easy-jQuery-Lightbox-Plugin-For-Image-Gallery-ion-zoom\img\zoom\carol_5_5.jpg" />
+    <Content Include="Easy-jQuery-Lightbox-Plugin-For-Image-Gallery-ion-zoom\img\zoom\casa_1_gr.jpg" />
+    <Content Include="Easy-jQuery-Lightbox-Plugin-For-Image-Gallery-ion-zoom\img\zoom\casa_1_xg.jpg" />
+    <Content Include="Easy-jQuery-Lightbox-Plugin-For-Image-Gallery-ion-zoom\img\zoom\casa_2_mid.jpg" />
+    <Content Include="Easy-jQuery-Lightbox-Plugin-For-Image-Gallery-ion-zoom\img\zoom\casa_2_xg.jpg" />
+    <Content Include="Easy-jQuery-Lightbox-Plugin-For-Image-Gallery-ion-zoom\img\zoom\casa_3_chi.jpg" />
+    <Content Include="Easy-jQuery-Lightbox-Plugin-For-Image-Gallery-ion-zoom\img\zoom\casa_3_xg.jpg" />
+    <Content Include="Easy-jQuery-Lightbox-Plugin-For-Image-Gallery-ion-zoom\img\zoom\casa_4_chi.jpg" />
+    <Content Include="Easy-jQuery-Lightbox-Plugin-For-Image-Gallery-ion-zoom\img\zoom\casa_4_xg.jpg" />
+    <Content Include="Easy-jQuery-Lightbox-Plugin-For-Image-Gallery-ion-zoom\img\zoom\casa_5_chi.jpg" />
+    <Content Include="Easy-jQuery-Lightbox-Plugin-For-Image-Gallery-ion-zoom\img\zoom\casa_5_xg.jpg" />
+    <Content Include="Easy-jQuery-Lightbox-Plugin-For-Image-Gallery-ion-zoom\img\zoom\jade_1.jpg" />
+    <Content Include="Easy-jQuery-Lightbox-Plugin-For-Image-Gallery-ion-zoom\img\zoom\jade_1_1.jpg" />
+    <Content Include="Easy-jQuery-Lightbox-Plugin-For-Image-Gallery-ion-zoom\img\zoom\jade_1_1_1.jpg" />
+    <Content Include="Easy-jQuery-Lightbox-Plugin-For-Image-Gallery-ion-zoom\img\zoom\jade_2.jpg" />
+    <Content Include="Easy-jQuery-Lightbox-Plugin-For-Image-Gallery-ion-zoom\img\zoom\jade_2_2.jpg" />
+    <Content Include="Easy-jQuery-Lightbox-Plugin-For-Image-Gallery-ion-zoom\img\zoom\jade_3.jpg" />
+    <Content Include="Easy-jQuery-Lightbox-Plugin-For-Image-Gallery-ion-zoom\img\zoom\jade_3_3.jpg" />
+    <Content Include="Easy-jQuery-Lightbox-Plugin-For-Image-Gallery-ion-zoom\img\zoom\jade_4.jpg" />
+    <Content Include="Easy-jQuery-Lightbox-Plugin-For-Image-Gallery-ion-zoom\img\zoom\jade_4_4.jpg" />
+    <Content Include="Easy-jQuery-Lightbox-Plugin-For-Image-Gallery-ion-zoom\img\zoom\jade_5.jpg" />
+    <Content Include="Easy-jQuery-Lightbox-Plugin-For-Image-Gallery-ion-zoom\img\zoom\jade_5_5.jpg" />
+    <Content Include="Easy-jQuery-Lightbox-Plugin-For-Image-Gallery-ion-zoom\img\zoom\summer_1.jpg" />
+    <Content Include="Easy-jQuery-Lightbox-Plugin-For-Image-Gallery-ion-zoom\img\zoom\summer_1_1.jpg" />
+    <Content Include="Easy-jQuery-Lightbox-Plugin-For-Image-Gallery-ion-zoom\img\zoom\summer_2.jpg" />
+    <Content Include="Easy-jQuery-Lightbox-Plugin-For-Image-Gallery-ion-zoom\img\zoom\summer_2_2.jpg" />
+    <Content Include="Easy-jQuery-Lightbox-Plugin-For-Image-Gallery-ion-zoom\img\zoom\summer_3.jpg" />
+    <Content Include="Easy-jQuery-Lightbox-Plugin-For-Image-Gallery-ion-zoom\img\zoom\summer_3_3.jpg" />
+    <Content Include="Easy-jQuery-Lightbox-Plugin-For-Image-Gallery-ion-zoom\img\zoom\summer_4.jpg" />
+    <Content Include="Easy-jQuery-Lightbox-Plugin-For-Image-Gallery-ion-zoom\img\zoom\summer_4_4.jpg" />
+    <Content Include="Easy-jQuery-Lightbox-Plugin-For-Image-Gallery-ion-zoom\img\zoom\summer_5.jpg" />
+    <Content Include="Easy-jQuery-Lightbox-Plugin-For-Image-Gallery-ion-zoom\img\zoom\summer_5_5.jpg" />
+    <Content Include="Easy-jQuery-Lightbox-Plugin-For-Image-Gallery-ion-zoom\img\zoom\titulo.jpg" />
+    <Content Include="Easy-jQuery-Lightbox-Plugin-For-Image-Gallery-ion-zoom\index.htm" />
+    <Content Include="Easy-jQuery-Lightbox-Plugin-For-Image-Gallery-ion-zoom\js\ion-zoom\ion.zoom.js" />
+    <Content Include="Easy-jQuery-Lightbox-Plugin-For-Image-Gallery-ion-zoom\js\ion-zoom\ion.zoom.min.js" />
+    <Content Include="Easy-jQuery-Lightbox-Plugin-For-Image-Gallery-ion-zoom\js\vendor\jquery-1.9.0.min.js" />
+    <Content Include="Easy-jQuery-Lightbox-Plugin-For-Image-Gallery-ion-zoom\js\vendor\modernizr-2.6.1.min.js" />
+    <Content Include="Easy-jQuery-Lightbox-Plugin-For-Image-Gallery-ion-zoom\titulo.jpg" />
+    <Content Include="fancy\demo\1_b.jpg" />
+    <Content Include="fancy\demo\1_s.jpg" />
+    <Content Include="fancy\demo\2_b.jpg" />
+    <Content Include="fancy\demo\2_s.jpg" />
+    <Content Include="fancy\demo\3_b.jpg" />
+    <Content Include="fancy\demo\3_s.jpg" />
+    <Content Include="fancy\demo\4_b.jpg" />
+    <Content Include="fancy\demo\4_s.jpg" />
+    <Content Include="fancy\demo\5_b.jpg" />
+    <Content Include="fancy\demo\5_s.jpg" />
+    <Content Include="fancy\demo\ajax.txt" />
+    <Content Include="fancy\demo\index.html" />
+    <Content Include="fancy\demo\index3.html" />
+    <Content Include="fancy\demo\index_boton.html" />
+    <Content Include="fancy\lib\jquery-1.7.1.min.js" />
+    <Content Include="fancy\lib\jquery.mousewheel-3.0.6.pack.js" />
+    <Content Include="fancy\source\blank.gif" />
+    <Content Include="fancy\source\fancybox_loading.gif" />
+    <Content Include="fancy\source\fancybox_sprite.png" />
+    <Content Include="fancy\source\helpers\fancybox_buttons.png" />
+    <Content Include="fancy\source\helpers\jquery.fancybox-buttons.css" />
+    <Content Include="fancy\source\helpers\jquery.fancybox-buttons.js" />
+    <Content Include="fancy\source\helpers\jquery.fancybox-thumbs.css" />
+    <Content Include="fancy\source\helpers\jquery.fancybox-thumbs.js" />
+    <Content Include="fancy\source\jquery.fancybox.css" />
+    <Content Include="fancy\source\jquery.fancybox.js" />
+    <Content Include="fancy\source\jquery.fancybox.pack.js" />
+    <Content Include="faqs.aspx" />
+    <Content Include="flujo-de-efectivo.aspx" />
+    <Content Include="Galeria1.aspx" />
+    <Content Include="galeria1.html" />
+    <Content Include="Galeria2.aspx" />
+    <Content Include="Galeria3.aspx" />
+    <Content Include="Galeria4.aspx" />
+    <Content Include="Galeria5.aspx" />
+    <Content Include="Galeria6.aspx" />
+    <Content Include="Galeria7.aspx" />
+    <Content Include="Galeria8.aspx" />
+    <Content Include="Galeria9.aspx" />
+    <Content Include="galeria_casas\Carolwood_St_4044\1.jpg" />
+    <Content Include="galeria_casas\Carolwood_St_4044\10.jpg" />
+    <Content Include="galeria_casas\Carolwood_St_4044\11.jpg" />
+    <Content Include="galeria_casas\Carolwood_St_4044\12.jpg" />
+    <Content Include="galeria_casas\Carolwood_St_4044\13.jpg" />
+    <Content Include="galeria_casas\Carolwood_St_4044\14.jpg" />
+    <Content Include="galeria_casas\Carolwood_St_4044\15.jpg" />
+    <Content Include="galeria_casas\Carolwood_St_4044\16.jpg" />
+    <Content Include="galeria_casas\Carolwood_St_4044\17.jpg" />
+    <Content Include="galeria_casas\Carolwood_St_4044\18.jpg" />
+    <Content Include="galeria_casas\Carolwood_St_4044\19.jpg" />
+    <Content Include="galeria_casas\Carolwood_St_4044\2.jpg" />
+    <Content Include="galeria_casas\Carolwood_St_4044\20.jpg" />
+    <Content Include="galeria_casas\Carolwood_St_4044\21.jpg" />
+    <Content Include="galeria_casas\Carolwood_St_4044\22.jpg" />
+    <Content Include="galeria_casas\Carolwood_St_4044\23.jpg" />
+    <Content Include="galeria_casas\Carolwood_St_4044\24.jpg" />
+    <Content Include="galeria_casas\Carolwood_St_4044\25.jpg" />
+    <Content Include="galeria_casas\Carolwood_St_4044\26.jpg" />
+    <Content Include="galeria_casas\Carolwood_St_4044\27.jpg" />
+    <Content Include="galeria_casas\Carolwood_St_4044\3.jpg" />
+    <Content Include="galeria_casas\Carolwood_St_4044\4.jpg" />
+    <Content Include="galeria_casas\Carolwood_St_4044\5.jpg" />
+    <Content Include="galeria_casas\Carolwood_St_4044\6.jpg" />
+    <Content Include="galeria_casas\Carolwood_St_4044\7.jpg" />
+    <Content Include="galeria_casas\Carolwood_St_4044\8.jpg" />
+    <Content Include="galeria_casas\Carolwood_St_4044\9.jpg" />
+    <Content Include="galeria_casas\Carolwood_St_4425\carolwoodst_1.jpg" />
+    <Content Include="galeria_casas\Carolwood_St_4425\carolwoodst_10.jpg" />
+    <Content Include="galeria_casas\Carolwood_St_4425\carolwoodst_11.jpg" />
+    <Content Include="galeria_casas\Carolwood_St_4425\carolwoodst_12.jpg" />
+    <Content Include="galeria_casas\Carolwood_St_4425\carolwoodst_13.jpg" />
+    <Content Include="galeria_casas\Carolwood_St_4425\carolwoodst_14.jpg" />
+    <Content Include="galeria_casas\Carolwood_St_4425\carolwoodst_15.jpg" />
+    <Content Include="galeria_casas\Carolwood_St_4425\carolwoodst_16.jpg" />
+    <Content Include="galeria_casas\Carolwood_St_4425\carolwoodst_17.jpg" />
+    <Content Include="galeria_casas\Carolwood_St_4425\carolwoodst_18.jpg" />
+    <Content Include="galeria_casas\Carolwood_St_4425\carolwoodst_19.jpg" />
+    <Content Include="galeria_casas\Carolwood_St_4425\carolwoodst_2.jpg" />
+    <Content Include="galeria_casas\Carolwood_St_4425\carolwoodst_20.jpg" />
+    <Content Include="galeria_casas\Carolwood_St_4425\carolwoodst_21.jpg" />
+    <Content Include="galeria_casas\Carolwood_St_4425\carolwoodst_22.jpg" />
+    <Content Include="galeria_casas\Carolwood_St_4425\carolwoodst_23.jpg" />
+    <Content Include="galeria_casas\Carolwood_St_4425\carolwoodst_24.jpg" />
+    <Content Include="galeria_casas\Carolwood_St_4425\carolwoodst_25.jpg" />
+    <Content Include="galeria_casas\Carolwood_St_4425\carolwoodst_26.jpg" />
+    <Content Include="galeria_casas\Carolwood_St_4425\carolwoodst_27.jpg" />
+    <Content Include="galeria_casas\Carolwood_St_4425\carolwoodst_28.jpg" />
+    <Content Include="galeria_casas\Carolwood_St_4425\carolwoodst_29.jpg" />
+    <Content Include="galeria_casas\Carolwood_St_4425\carolwoodst_3.jpg" />
+    <Content Include="galeria_casas\Carolwood_St_4425\carolwoodst_30.jpg" />
+    <Content Include="galeria_casas\Carolwood_St_4425\carolwoodst_31.jpg" />
+    <Content Include="galeria_casas\Carolwood_St_4425\carolwoodst_33.jpg" />
+    <Content Include="galeria_casas\Carolwood_St_4425\carolwoodst_34.jpg" />
+    <Content Include="galeria_casas\Carolwood_St_4425\carolwoodst_35.jpg" />
+    <Content Include="galeria_casas\Carolwood_St_4425\carolwoodst_36.jpg" />
+    <Content Include="galeria_casas\Carolwood_St_4425\carolwoodst_37.jpg" />
+    <Content Include="galeria_casas\Carolwood_St_4425\carolwoodst_38.jpg" />
+    <Content Include="galeria_casas\Carolwood_St_4425\carolwoodst_39.jpg" />
+    <Content Include="galeria_casas\Carolwood_St_4425\carolwoodst_4.jpg" />
+    <Content Include="galeria_casas\Carolwood_St_4425\carolwoodst_40.jpg" />
+    <Content Include="galeria_casas\Carolwood_St_4425\carolwoodst_41.jpg" />
+    <Content Include="galeria_casas\Carolwood_St_4425\carolwoodst_42.jpg" />
+    <Content Include="galeria_casas\Carolwood_St_4425\carolwoodst_5.jpg" />
+    <Content Include="galeria_casas\Carolwood_St_4425\carolwoodst_6.jpg" />
+    <Content Include="galeria_casas\Carolwood_St_4425\carolwoodst_7.jpg" />
+    <Content Include="galeria_casas\Carolwood_St_4425\carolwoodst_8.jpg" />
+    <Content Include="galeria_casas\Carolwood_St_4425\carolwoodst_9.jpg" />
+    <Content Include="galeria_casas\casaa\1.jpg" />
+    <Content Include="galeria_casas\casaa\2.jpg" />
+    <Content Include="galeria_casas\casaa\3.jpg" />
+    <Content Include="galeria_casas\casaa\4.jpg" />
+    <Content Include="galeria_casas\casaa\5.jpg" />
+    <Content Include="galeria_casas\casaa\6.jpg" />
+    <Content Include="galeria_casas\casaa\7.jpg" />
+    <Content Include="galeria_casas\casaa\8.jpg" />
+    <Content Include="galeria_casas\casaa\9.jpg" />
+    <Content Include="galeria_casas\casab\1.jpg" />
+    <Content Include="galeria_casas\casab\2.jpg" />
+    <Content Include="galeria_casas\casab\3.jpg" />
+    <Content Include="galeria_casas\casab\4.jpg" />
+    <Content Include="galeria_casas\casab\5.jpg" />
+    <Content Include="galeria_casas\casab\6.jpg" />
+    <Content Include="galeria_casas\casab\7.jpg" />
+    <Content Include="galeria_casas\casab\portada web.jpg" />
+    <Content Include="galeria_casas\Darden_Ave_5017\darden1.jpg" />
+    <Content Include="galeria_casas\Darden_Ave_5017\darden10.jpg" />
+    <Content Include="galeria_casas\Darden_Ave_5017\darden11.jpg" />
+    <Content Include="galeria_casas\Darden_Ave_5017\darden12.jpg" />
+    <Content Include="galeria_casas\Darden_Ave_5017\darden13.jpg" />
+    <Content Include="galeria_casas\Darden_Ave_5017\darden14.jpg" />
+    <Content Include="galeria_casas\Darden_Ave_5017\darden15.jpg" />
+    <Content Include="galeria_casas\Darden_Ave_5017\darden16.jpg" />
+    <Content Include="galeria_casas\Darden_Ave_5017\darden17.jpg" />
+    <Content Include="galeria_casas\Darden_Ave_5017\darden2.jpg" />
+    <Content Include="galeria_casas\Darden_Ave_5017\darden3.jpg" />
+    <Content Include="galeria_casas\Darden_Ave_5017\darden4.jpg" />
+    <Content Include="galeria_casas\Darden_Ave_5017\darden5.jpg" />
+    <Content Include="galeria_casas\Darden_Ave_5017\darden6.jpg" />
+    <Content Include="galeria_casas\Darden_Ave_5017\darden7.jpg" />
+    <Content Include="galeria_casas\Darden_Ave_5017\darden8.jpg" />
+    <Content Include="galeria_casas\Darden_Ave_5017\darden9.jpg" />
+    <Content Include="galeria_casas\fresno_1\1.jpg" />
+    <Content Include="galeria_casas\fresno_1\1_s.jpg" />
+    <Content Include="galeria_casas\fresno_1\2.jpg" />
+    <Content Include="galeria_casas\fresno_1\2_s.jpg" />
+    <Content Include="galeria_casas\fresno_1\3.jpg" />
+    <Content Include="galeria_casas\fresno_1\3_s.jpg" />
+    <Content Include="galeria_casas\fresno_1\4.jpg" />
+    <Content Include="galeria_casas\fresno_1\4_s.jpg" />
+    <Content Include="galeria_casas\fresno_1\5.jpg" />
+    <Content Include="galeria_casas\fresno_1\5_s.jpg" />
+    <Content Include="galeria_casas\fresno_1\6.jpg" />
+    <Content Include="galeria_casas\fresno_1\7.jpg" />
+    <Content Include="galeria_casas\fresno_1\8.jpg" />
+    <Content Include="galeria_casas\fresno_1\9.jpg" />
+    <Content Include="galeria_casas\galeria1\1.jpg" />
+    <Content Include="galeria_casas\galeria1\2.jpg" />
+    <Content Include="galeria_casas\galeria1\3.jpg" />
+    <Content Include="galeria_casas\galeria1\4.jpg" />
+    <Content Include="galeria_casas\galeria1\5.jpg" />
+    <Content Include="galeria_casas\galeria1\6.jpg" />
+    <Content Include="galeria_casas\galeria1\7.jpg" />
+    <Content Include="galeria_casas\galeria1\8.jpg" />
+    <Content Include="galeria_casas\galeria1\9.jpg" />
+    <Content Include="galeria_casas\galeria_5012\5012_1.jpg" />
+    <Content Include="galeria_casas\galeria_5012\antes.jpg" />
+    <Content Include="galeria_casas\galeria_5012\antes01.jpg" />
+    <Content Include="galeria_casas\galeria_5012\antes01_1.jpg" />
+    <Content Include="galeria_casas\galeria_5012\antes02.jpg" />
+    <Content Include="galeria_casas\galeria_5012\antes03.jpg" />
+    <Content Include="galeria_casas\galeria_5012\antes04.jpg" />
+    <Content Include="galeria_casas\galeria_5012\antes04_1.jpg" />
+    <Content Include="galeria_casas\galeria_5012\antes05.jpg" />
+    <Content Include="galeria_casas\galeria_5012\antes06.jpg" />
+    <Content Include="galeria_casas\galeria_5012\antes07.jpg" />
+    <Content Include="galeria_casas\galeria_5012\antes07_1.jpg" />
+    <Content Include="galeria_casas\galeria_5012\antes08.jpg" />
+    <Content Include="galeria_casas\galeria_5012\antes08_1.jpg" />
+    <Content Include="galeria_casas\galeria_5012\antes09.jpg" />
+    <Content Include="galeria_casas\galeria_5012\antes10.jpg" />
+    <Content Include="galeria_casas\galeria_5012\antes11.jpg" />
+    <Content Include="galeria_casas\galeria_5012\antes11_1.jpg" />
+    <Content Include="galeria_casas\galeria_5012\antes12.jpg" />
+    <Content Include="galeria_casas\galeria_5012\antes13.jpg" />
+    <Content Include="galeria_casas\galeria_5012\antes14.jpg" />
+    <Content Include="galeria_casas\galeria_5012\antes15.jpg" />
+    <Content Include="galeria_casas\galeria_5012\antes16.jpg" />
+    <Content Include="galeria_casas\galeria_5012\antes17.jpg" />
+    <Content Include="galeria_casas\galeria_5012\antes17_1.jpg" />
+    <Content Include="galeria_casas\galeria_5012\antes18.jpg" />
+    <Content Include="galeria_casas\galeria_5012\antes18_1.jpg" />
+    <Content Include="galeria_casas\galeria_5012\antes19.jpg" />
+    <Content Include="galeria_casas\galeria_5012\antes20.jpg" />
+    <Content Include="galeria_casas\galeria_5012\despues.jpg" />
+    <Content Include="galeria_casas\galeria_5012\despues01.jpg" />
+    <Content Include="galeria_casas\galeria_5012\despues01_1.jpg" />
+    <Content Include="galeria_casas\galeria_5012\despues02.jpg" />
+    <Content Include="galeria_casas\galeria_5012\despues03.jpg" />
+    <Content Include="galeria_casas\galeria_5012\despues03_1.jpg" />
+    <Content Include="galeria_casas\galeria_5012\despues04.jpg" />
+    <Content Include="galeria_casas\galeria_5012\despues05.jpg" />
+    <Content Include="galeria_casas\galeria_5012\despues05_1.jpg" />
+    <Content Include="galeria_casas\galeria_5012\despues06.jpg" />
+    <Content Include="galeria_casas\galeria_5012\despues06_1.jpg" />
+    <Content Include="galeria_casas\galeria_5012\despues07.jpg" />
+    <Content Include="galeria_casas\galeria_5012\despues08.jpg" />
+    <Content Include="galeria_casas\galeria_5012\despues09.jpg" />
+    <Content Include="galeria_casas\galeria_5012\despues09_1.jpg" />
+    <Content Include="galeria_casas\galeria_5012\despues10.jpg" />
+    <Content Include="galeria_casas\galeria_5012\despues11.jpg" />
+    <Content Include="galeria_casas\galeria_5012\despues11_1.jpg" />
+    <Content Include="galeria_casas\galeria_5012\despues12.jpg" />
+    <Content Include="galeria_casas\galeria_5012\despues13.jpg" />
+    <Content Include="galeria_casas\galeria_5012\despues14.jpg" />
+    <Content Include="galeria_casas\galeria_5012\despues14_1.jpg" />
+    <Content Include="galeria_casas\galeria_5012\despues15.jpg" />
+    <Content Include="galeria_casas\galeria_5012\despues15_1.jpg" />
+    <Content Include="galeria_casas\galeria_5012\despues16.jpg" />
+    <Content Include="galeria_casas\Garden_lac_ave  4921\garden_lac_ave_1.jpg" />
+    <Content Include="galeria_casas\Garden_lac_ave  4921\garden_lac_ave_10.jpg" />
+    <Content Include="galeria_casas\Garden_lac_ave  4921\garden_lac_ave_11.jpg" />
+    <Content Include="galeria_casas\Garden_lac_ave  4921\garden_lac_ave_12.jpg" />
+    <Content Include="galeria_casas\Garden_lac_ave  4921\garden_lac_ave_13.jpg" />
+    <Content Include="galeria_casas\Garden_lac_ave  4921\garden_lac_ave_2.jpg" />
+    <Content Include="galeria_casas\Garden_lac_ave  4921\garden_lac_ave_3.jpg" />
+    <Content Include="galeria_casas\Garden_lac_ave  4921\garden_lac_ave_4.jpg" />
+    <Content Include="galeria_casas\Garden_lac_ave  4921\garden_lac_ave_5.jpg" />
+    <Content Include="galeria_casas\Garden_lac_ave  4921\garden_lac_ave_6.jpg" />
+    <Content Include="galeria_casas\Garden_lac_ave  4921\garden_lac_ave_7.jpg" />
+    <Content Include="galeria_casas\Garden_lac_ave  4921\garden_lac_ave_8.jpg" />
+    <Content Include="galeria_casas\Garden_lac_ave  4921\garden_lac_ave_9.jpg" />
+    <Content Include="galeria_casas\Garden_lac_ave_4921\garden_lac_ave_1.jpg" />
+    <Content Include="galeria_casas\Garden_lac_ave_4921\garden_lac_ave_10.jpg" />
+    <Content Include="galeria_casas\Garden_lac_ave_4921\garden_lac_ave_11.jpg" />
+    <Content Include="galeria_casas\Garden_lac_ave_4921\garden_lac_ave_12.jpg" />
+    <Content Include="galeria_casas\Garden_lac_ave_4921\garden_lac_ave_13.jpg" />
+    <Content Include="galeria_casas\Garden_lac_ave_4921\garden_lac_ave_2.jpg" />
+    <Content Include="galeria_casas\Garden_lac_ave_4921\garden_lac_ave_3.jpg" />
+    <Content Include="galeria_casas\Garden_lac_ave_4921\garden_lac_ave_4.jpg" />
+    <Content Include="galeria_casas\Garden_lac_ave_4921\garden_lac_ave_5.jpg" />
+    <Content Include="galeria_casas\Garden_lac_ave_4921\garden_lac_ave_6.jpg" />
+    <Content Include="galeria_casas\Garden_lac_ave_4921\garden_lac_ave_7.jpg" />
+    <Content Include="galeria_casas\Garden_lac_ave_4921\garden_lac_ave_8.jpg" />
+    <Content Include="galeria_casas\Garden_lac_ave_4921\garden_lac_ave_9.jpg" />
+    <Content Include="galeria_casas\jade\jade1.jpg" />
+    <Content Include="galeria_casas\jade\jade10.jpg" />
+    <Content Include="galeria_casas\jade\jade11.jpg" />
+    <Content Include="galeria_casas\jade\jade12.jpg" />
+    <Content Include="galeria_casas\jade\jade13.jpg" />
+    <Content Include="galeria_casas\jade\jade14.jpg" />
+    <Content Include="galeria_casas\jade\jade15.jpg" />
+    <Content Include="galeria_casas\jade\jade16.jpg" />
+    <Content Include="galeria_casas\jade\jade17.jpg" />
+    <Content Include="galeria_casas\jade\jade18.jpg" />
+    <Content Include="galeria_casas\jade\jade19.jpg" />
+    <Content Include="galeria_casas\jade\jade2.jpg" />
+    <Content Include="galeria_casas\jade\jade20.jpg" />
+    <Content Include="galeria_casas\jade\jade21.jpg" />
+    <Content Include="galeria_casas\jade\jade22.jpg" />
+    <Content Include="galeria_casas\jade\jade23.jpg" />
+    <Content Include="galeria_casas\jade\jade3.jpg" />
+    <Content Include="galeria_casas\jade\jade4.jpg" />
+    <Content Include="galeria_casas\jade\jade5.jpg" />
+    <Content Include="galeria_casas\jade\jade6.jpg" />
+    <Content Include="galeria_casas\jade\jade7.jpg" />
+    <Content Include="galeria_casas\jade\jade8.jpg" />
+    <Content Include="galeria_casas\jade\jade9.jpg" />
+    <Content Include="galeria_casas\kissime_florida.jpg" />
+    <Content Include="galeria_casas\login_icon.png" />
+    <Content Include="galeria_casas\portada a.jpg" />
+    <Content Include="galeria_casas\portada carol.jpg" />
+    <Content Include="galeria_casas\portada web.jpg" />
+    <Content Include="galeria_casas\portada- darden.jpg" />
+    <Content Include="galeria_casas\portada-4044- carol.jpg" />
+    <Content Include="galeria_casas\portada-5012-saint.jpg" />
+    <Content Include="galeria_casas\portada-gran-lac- ave.jpg" />
+    <Content Include="galeria_casas\portada-jade-cir.jpg" />
+    <Content Include="galeria_casas\portada-summer.jpg" />
+    <Content Include="galeria_casas\portada3.jpg" />
+    <Content Include="galeria_casas\portada33.jpg" />
+    <Content Include="galeria_casas\portada4.jpg" />
+    <Content Include="galeria_casas\portada6.jpg" />
+    <Content Include="galeria_casas\portada7.jpg" />
+    <Content Include="galeria_casas\portada8.jpg" />
+    <Content Include="galeria_casas\portada9.jpg" />
+    <Content Include="galeria_casas\portadaa.jpg" />
+    <Content Include="galeria_casas\portadaa.png" />
+    <Content Include="galeria_casas\portadaweb.jpg" />
+    <Content Include="galeria_casas\portada_carol.jpg" />
+    <Content Include="galeria_casas\summerwoodave_4090\summerwood_ave_1.jpg" />
+    <Content Include="galeria_casas\summerwoodave_4090\summerwood_ave_10.jpg" />
+    <Content Include="galeria_casas\summerwoodave_4090\summerwood_ave_11.jpg" />
+    <Content Include="galeria_casas\summerwoodave_4090\summerwood_ave_13.jpg" />
+    <Content Include="galeria_casas\summerwoodave_4090\summerwood_ave_14.jpg" />
+    <Content Include="galeria_casas\summerwoodave_4090\summerwood_ave_15.jpg" />
+    <Content Include="galeria_casas\summerwoodave_4090\summerwood_ave_16.jpg" />
+    <Content Include="galeria_casas\summerwoodave_4090\summerwood_ave_17.jpg" />
+    <Content Include="galeria_casas\summerwoodave_4090\summerwood_ave_18.jpg" />
+    <Content Include="galeria_casas\summerwoodave_4090\summerwood_ave_19.jpg" />
+    <Content Include="galeria_casas\summerwoodave_4090\summerwood_ave_2.jpg" />
+    <Content Include="galeria_casas\summerwoodave_4090\summerwood_ave_20.jpg" />
+    <Content Include="galeria_casas\summerwoodave_4090\summerwood_ave_21.jpg" />
+    <Content Include="galeria_casas\summerwoodave_4090\summerwood_ave_22.jpg" />
+    <Content Include="galeria_casas\summerwoodave_4090\summerwood_ave_23.jpg" />
+    <Content Include="galeria_casas\summerwoodave_4090\summerwood_ave_24.jpg" />
+    <Content Include="galeria_casas\summerwoodave_4090\summerwood_ave_3.jpg" />
+    <Content Include="galeria_casas\summerwoodave_4090\summerwood_ave_4.jpg" />
+    <Content Include="galeria_casas\summerwoodave_4090\summerwood_ave_5.jpg" />
+    <Content Include="galeria_casas\summerwoodave_4090\summerwood_ave_6.jpg" />
+    <Content Include="galeria_casas\summerwoodave_4090\summerwood_ave_7.jpg" />
+    <Content Include="galeria_casas\summerwoodave_4090\summerwood_ave_8.jpg" />
+    <Content Include="galeria_casas\summerwoodave_4090\summerwood_ave_9.jpg" />
+    <Content Include="Galeria_resp\app\scripts\main.js" />
+    <Content Include="Galeria_resp\app\scripts\repo\gallery.js" />
+    <Content Include="Galeria_resp\app\styles\blocks\gallery\images\close_black.png" />
+    <Content Include="Galeria_resp\app\styles\blocks\gallery\images\close_black_2x.png" />
+    <Content Include="Galeria_resp\app\styles\blocks\gallery\images\close_white.png" />
+    <Content Include="Galeria_resp\app\styles\blocks\gallery\images\fullscreen_black.png" />
+    <Content Include="Galeria_resp\app\styles\blocks\gallery\images\fullscreen_exit_black.png" />
+    <Content Include="Galeria_resp\app\styles\blocks\gallery\images\left_black.png" />
+    <Content Include="Galeria_resp\app\styles\blocks\gallery\images\left_black_2x.png" />
+    <Content Include="Galeria_resp\app\styles\blocks\gallery\images\left_white.png" />
+    <Content Include="Galeria_resp\app\styles\blocks\gallery\images\right_black.png" />
+    <Content Include="Galeria_resp\app\styles\blocks\gallery\images\right_black_2x.png" />
+    <Content Include="Galeria_resp\app\styles\blocks\gallery\images\right_white.png" />
+    <Content Include="Galeria_resp\app\styles\blocks\gallery\images\sprite.png" />
+    <Content Include="Galeria_resp\app\styles\vendor\plugin\style.css" />
+    <Content Include="Galeria_resp\commit_tmp.txt" />
+    <Content Include="Galeria_resp\dist\scripts\gallery.js" />
+    <Content Include="Galeria_resp\dist\scripts\main.js" />
+    <Content Include="Galeria_resp\dist\styles\_main.css" />
+    <Content Include="Galeria_resp\dist\styles\__main.css" />
+    <Content Include="Galeria_resp\gulpfile.js" />
+    <Content Include="Galeria_resp\index.html" />
+    <Content Include="Galeria_resp\index2.html" />
+    <Content Include="Galeria_resp\main.js" />
+    <Content Include="ganancias-de-capital.aspx" />
+    <Content Include="ganancias_galeria1.html" />
+    <Content Include="imagenes\btnLogin_Adv.png" />
+    <Content Include="imagenes\user-login.png" />
+    <Content Include="images\banco.jpg" />
+    <Content Include="images\btnConfig2.png" />
+    <Content Include="images\btnConfigurar.png" />
+    <Content Include="img_cap.jpg" />
+    <Content Include="index.aspx" />
+    <Content Include="index.html" />
+    <Content Include="index2.html" />
+    <Content Include="indexCopy.html" />
+    <Content Include="interescompuesto\css\bootstrap.css" />
+    <Content Include="interescompuesto\css\bootstrap.min.css" />
+    <Content Include="interescompuesto\css\mdb.css" />
+    <Content Include="interescompuesto\css\mdb.lite.css" />
+    <Content Include="interescompuesto\css\mdb.lite.min.css" />
+    <Content Include="interescompuesto\css\mdb.min.css" />
+    <Content Include="interescompuesto\css\style.css" />
+    <Content Include="interescompuesto\css\style.min.css" />
+    <Content Include="interescompuesto\Default.aspx" />
+    <Content Include="interescompuesto\js\bootstrap.js" />
+    <Content Include="interescompuesto\js\bootstrap.min.js" />
+    <Content Include="interescompuesto\js\jquery-3.4.1.min.js" />
+    <Content Include="interescompuesto\js\mdb.js" />
+    <Content Include="interescompuesto\js\mdb.min.js" />
+    <Content Include="interescompuesto\js\popper.min.js" />
+    <Content Include="inversionista\css\all.css" />
+    <Content Include="inversionista\css\all.min.css" />
+    <Content Include="inversionista\css\animate.css" />
+    <Content Include="inversionista\css\bootstrap-grid.css" />
+    <Content Include="inversionista\css\bootstrap-grid.min.css" />
+    <Content Include="inversionista\css\bootstrap-reboot.css" />
+    <Content Include="inversionista\css\bootstrap-reboot.min.css" />
+    <Content Include="inversionista\css\bootstrap.css" />
+    <Content Include="inversionista\css\bootstrap.min.css" />
+    <Content Include="inversionista\css\brands.css" />
+    <Content Include="inversionista\css\brands.min.css" />
+    <Content Include="inversionista\css\fontawesome.css" />
+    <Content Include="inversionista\css\fontawesome.min.css" />
+    <Content Include="inversionista\css\jquery.fancybox.css" />
+    <Content Include="inversionista\css\jquery.fancybox.min.css" />
+    <Content Include="inversionista\css\principal.css" />
+    <Content Include="inversionista\css\regular.css" />
+    <Content Include="inversionista\css\regular.min.css" />
+    <Content Include="inversionista\css\solid.css" />
+    <Content Include="inversionista\css\solid.min.css" />
+    <Content Include="inversionista\css\svg-with-js.css" />
+    <Content Include="inversionista\css\svg-with-js.min.css" />
+    <Content Include="inversionista\css\timelinestyle.css" />
+    <Content Include="inversionista\css\v4-shims.css" />
+    <Content Include="inversionista\css\v4-shims.min.css" />
+    <Content Include="inversionista\Inversiones.aspx" />
+    <Content Include="inversionista\Inversiones_.aspx" />
+    <Content Include="inversionista\js\bootstrap.bundle.js" />
+    <Content Include="inversionista\js\bootstrap.bundle.min.js" />
+    <Content Include="inversionista\js\bootstrap.js" />
+    <Content Include="inversionista\js\bootstrap.min.js" />
+    <Content Include="inversionista\js\jquery.fancybox.js" />
+    <Content Include="inversionista\js\jquery.fancybox.min.js" />
+    <Content Include="inversionista\js\jquery.js" />
+    <Content Include="inversionista\js\jquery.min.js" />
+    <Content Include="inversionista\js\libs\jquery\3.2.1\jquery.js" />
+    <Content Include="inversionista\js\libs\jquery\3.2.1\jquery.min.js" />
+    <Content Include="inversionista\LineaDeTiempo.aspx" />
+    <Content Include="inversionista\webfonts\fa-brands-400.svg" />
+    <Content Include="inversionista\webfonts\fa-regular-400.svg" />
+    <Content Include="inversionista\webfonts\fa-solid-900.svg" />
+    <Content Include="js\bootstrap-slider.min.js" />
+    <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\default.js" />
+    <Content Include="js\jquery-1.11.3.min.js" />
+    <Content Include="js\libs\jquery-2.0.3.min.js" />
+    <Content Include="js\login.js" />
+    <Content Include="js\menu-usuario.js" />
+    <Content Include="js\olvidarContrasena.js" />
+    <Content Include="js\usuarios.js" />
+    <Content Include="lib\jquery-1.7.1.min.js" />
+    <Content Include="lib\jquery.mousewheel-3.0.6.pack.js" />
+    <Content Include="login.aspx" />
+    <Content Include="login\css\style.css" />
+    <Content Include="login\images\bar.png" />
+    <Content Include="login\images\buttonbg.png" />
+    <Content Include="login\images\buttonbgHover.png" />
+    <Content Include="login\images\loginArrow.png" />
+    <Content Include="login\images\loginbuttonbg.png" />
+    <Content Include="login\index.html" />
+    <Content Include="login\login.js" />
+    <Content Include="mail\mail.aspx" />
+    <Content Include="mail\send.js" />
+    <Content Include="mail\style.css" />
+    <Content Include="negocios\documento01.html" />
+    <Content Include="negocios\documento02.html" />
+    <Content Include="negocios\documento03.html" />
+    <Content Include="negocios\documento04.html" />
+    <Content Include="negocios\documento05.html" />
+    <Content Include="negocios\documento06.html" />
+    <Content Include="negocios\documento07.html" />
+    <Content Include="negocios\documento08.html" />
+    <Content Include="negocios\documento09.html" />
+    <Content Include="negocios\documento10.html" />
+    <Content Include="negocios\documento11.html" />
+    <Content Include="negocios\documento12.html" />
+    <Content Include="negocios\index.aspx" />
+    <Content Include="negocios\js\pdf.js" />
+    <Content Include="negocios\js\pdf.worker.js" />
+    <Content Include="quienes-somos.aspx" />
+    <Content Include="rosa.png" />
+    <Content Include="Sliders\css\product-showcase.css" />
+    <Content Include="Sliders\js\product-showcase.js" />
+    <Content Include="Sliders\product_showcase.html" />
+    <Content Include="Sliders\product_showcase2.html" />
+    <Content Include="Sliders\product_showcase_.html" />
+    <Content Include="source\blank.gif" />
+    <Content Include="source\fancybox_loading.gif" />
+    <Content Include="source\fancybox_sprite.png" />
+    <Content Include="source\helpers\fancybox_buttons.png" />
+    <Content Include="source\helpers\jquery.fancybox-buttons.css" />
+    <Content Include="source\helpers\jquery.fancybox-buttons.js" />
+    <Content Include="source\helpers\jquery.fancybox-thumbs.css" />
+    <Content Include="source\helpers\jquery.fancybox-thumbs.js" />
+    <Content Include="source\jquery.fancybox.css" />
+    <Content Include="source\jquery.fancybox.js" />
+    <Content Include="source\jquery.fancybox.pack.js" />
+    <Content Include="style.css" />
+    <Content Include="tampa.jpg" />
+    <Content Include="testimonios.aspx" />
+    <Content Include="testimonios\edgar.png" />
+    <Content Include="testimonios\macias.png" />
+    <Content Include="testimonios\oscar.png" />
+    <Content Include="testimonios\rosa.png" />
+    <Content Include="untitled.html" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="webfonts\fa-brands-400.svg" />
+    <Content Include="webfonts\fa-regular-400.svg" />
+    <Content Include="webfonts\fa-solid-900.svg" />
+    <Content Include="webmaster\galeria_casas\Carolwood_St_4044\1.jpg" />
+    <Content Include="webmaster\galeria_casas\Carolwood_St_4044\10.jpg" />
+    <Content Include="webmaster\galeria_casas\Carolwood_St_4044\11.jpg" />
+    <Content Include="webmaster\galeria_casas\Carolwood_St_4044\12.jpg" />
+    <Content Include="webmaster\galeria_casas\Carolwood_St_4044\13.jpg" />
+    <Content Include="webmaster\galeria_casas\Carolwood_St_4044\14.jpg" />
+    <Content Include="webmaster\galeria_casas\Carolwood_St_4044\15.jpg" />
+    <Content Include="webmaster\galeria_casas\Carolwood_St_4044\16.jpg" />
+    <Content Include="webmaster\galeria_casas\Carolwood_St_4044\17.jpg" />
+    <Content Include="webmaster\galeria_casas\Carolwood_St_4044\18.jpg" />
+    <Content Include="webmaster\galeria_casas\Carolwood_St_4044\19.jpg" />
+    <Content Include="webmaster\galeria_casas\Carolwood_St_4044\2.jpg" />
+    <Content Include="webmaster\galeria_casas\Carolwood_St_4044\20.jpg" />
+    <Content Include="webmaster\galeria_casas\Carolwood_St_4044\21.jpg" />
+    <Content Include="webmaster\galeria_casas\Carolwood_St_4044\22.jpg" />
+    <Content Include="webmaster\galeria_casas\Carolwood_St_4044\23.jpg" />
+    <Content Include="webmaster\galeria_casas\Carolwood_St_4044\24.jpg" />
+    <Content Include="webmaster\galeria_casas\Carolwood_St_4044\25.jpg" />
+    <Content Include="webmaster\galeria_casas\Carolwood_St_4044\26.jpg" />
+    <Content Include="webmaster\galeria_casas\Carolwood_St_4044\27.jpg" />
+    <Content Include="webmaster\galeria_casas\Carolwood_St_4044\3.jpg" />
+    <Content Include="webmaster\galeria_casas\Carolwood_St_4044\4.jpg" />
+    <Content Include="webmaster\galeria_casas\Carolwood_St_4044\5.jpg" />
+    <Content Include="webmaster\galeria_casas\Carolwood_St_4044\6.jpg" />
+    <Content Include="webmaster\galeria_casas\Carolwood_St_4044\7.jpg" />
+    <Content Include="webmaster\galeria_casas\Carolwood_St_4044\8.jpg" />
+    <Content Include="webmaster\galeria_casas\Carolwood_St_4044\9.jpg" />
+    <Content Include="webmaster\smallslide\css\offbeat-slider.css" />
+    <Content Include="webmaster\smallslide\index.html" />
+    <Content Include="webmaster\smallslide\js\offbeat-slider.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="admin\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\Estatus.aspx.cs">
+      <DependentUpon>Estatus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\Estatus.aspx.designer.cs">
+      <DependentUpon>Estatus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\FormaCambiarContrasena.aspx.cs">
+      <DependentUpon>FormaCambiarContrasena.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\FormaCambiarContrasena.aspx.designer.cs">
+      <DependentUpon>FormaCambiarContrasena.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\FormaImagenesProyecto.aspx.cs">
+      <DependentUpon>FormaImagenesProyecto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\FormaImagenesProyecto.aspx.designer.cs">
+      <DependentUpon>FormaImagenesProyecto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\FormaInversion.aspx.cs">
+      <DependentUpon>FormaInversion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\FormaInversion.aspx.designer.cs">
+      <DependentUpon>FormaInversion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\FormaMultiImagenesProyecto.aspx.cs">
+      <DependentUpon>FormaMultiImagenesProyecto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\FormaMultiImagenesProyecto.aspx.designer.cs">
+      <DependentUpon>FormaMultiImagenesProyecto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\FormaProyecto.aspx.cs">
+      <DependentUpon>FormaProyecto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\FormaProyecto.aspx.designer.cs">
+      <DependentUpon>FormaProyecto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\FormaVerImagenProyecto.aspx.cs">
+      <DependentUpon>FormaVerImagenProyecto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\FormaVerImagenProyecto.aspx.designer.cs">
+      <DependentUpon>FormaVerImagenProyecto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\FormaUsuario.aspx.cs">
+      <DependentUpon>FormaUsuario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\FormaUsuario.aspx.designer.cs">
+      <DependentUpon>FormaUsuario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="admin\Inversiones.aspx.cs">
+      <DependentUpon>Inversiones.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\Inversiones.aspx.designer.cs">
+      <DependentUpon>Inversiones.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\Menu.aspx.cs">
+      <DependentUpon>Menu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\Menu.aspx.designer.cs">
+      <DependentUpon>Menu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\OlvidasteContrasena.aspx.cs">
+      <DependentUpon>OlvidasteContrasena.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\OlvidasteContrasena.aspx.designer.cs">
+      <DependentUpon>OlvidasteContrasena.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\Proyectos.aspx.cs">
+      <DependentUpon>Proyectos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\Proyectos.aspx.designer.cs">
+      <DependentUpon>Proyectos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\Usuarios.aspx.cs">
+      <DependentUpon>Usuarios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\Usuarios.aspx.designer.cs">
+      <DependentUpon>Usuarios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="contacto.aspx.cs">
+      <DependentUpon>contacto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="contacto.aspx.designer.cs">
+      <DependentUpon>contacto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="faqs.aspx.cs">
+      <DependentUpon>faqs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="faqs.aspx.designer.cs">
+      <DependentUpon>faqs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="flujo-de-efectivo.aspx.cs">
+      <DependentUpon>flujo-de-efectivo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="flujo-de-efectivo.aspx.designer.cs">
+      <DependentUpon>flujo-de-efectivo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Galeria1.aspx.cs">
+      <DependentUpon>Galeria1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Galeria1.aspx.designer.cs">
+      <DependentUpon>Galeria1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Galeria2.aspx.cs">
+      <DependentUpon>Galeria2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Galeria2.aspx.designer.cs">
+      <DependentUpon>Galeria2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Galeria3.aspx.cs">
+      <DependentUpon>Galeria3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Galeria3.aspx.designer.cs">
+      <DependentUpon>Galeria3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Galeria4.aspx.cs">
+      <DependentUpon>Galeria4.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Galeria4.aspx.designer.cs">
+      <DependentUpon>Galeria4.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Galeria5.aspx.cs">
+      <DependentUpon>Galeria5.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Galeria5.aspx.designer.cs">
+      <DependentUpon>Galeria5.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Galeria6.aspx.cs">
+      <DependentUpon>Galeria6.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Galeria6.aspx.designer.cs">
+      <DependentUpon>Galeria6.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Galeria7.aspx.cs">
+      <DependentUpon>Galeria7.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Galeria7.aspx.designer.cs">
+      <DependentUpon>Galeria7.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Galeria8.aspx.cs">
+      <DependentUpon>Galeria8.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Galeria8.aspx.designer.cs">
+      <DependentUpon>Galeria8.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Galeria9.aspx.cs">
+      <DependentUpon>Galeria9.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Galeria9.aspx.designer.cs">
+      <DependentUpon>Galeria9.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ganancias-de-capital.aspx.cs">
+      <DependentUpon>ganancias-de-capital.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ganancias-de-capital.aspx.designer.cs">
+      <DependentUpon>ganancias-de-capital.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="interescompuesto\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="interescompuesto\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="inversionista\Inversiones.aspx.cs">
+      <DependentUpon>Inversiones.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="inversionista\Inversiones.aspx.designer.cs">
+      <DependentUpon>Inversiones.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="inversionista\Inversiones_.aspx.cs">
+      <DependentUpon>Inversiones_.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="inversionista\Inversiones_.aspx.designer.cs">
+      <DependentUpon>Inversiones_.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="inversionista\LineaDeTiempo.aspx.cs">
+      <DependentUpon>LineaDeTiempo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="inversionista\LineaDeTiempo.aspx.designer.cs">
+      <DependentUpon>LineaDeTiempo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mail\mail.aspx.cs">
+      <DependentUpon>mail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mail\mail.aspx.designer.cs">
+      <DependentUpon>mail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="negocios\index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="negocios\index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="quienes-somos.aspx.cs">
+      <DependentUpon>quienes-somos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="quienes-somos.aspx.designer.cs">
+      <DependentUpon>quienes-somos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="testimonios.aspx.cs">
+      <DependentUpon>testimonios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="testimonios.aspx.designer.cs">
+      <DependentUpon>testimonios.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="admin\ImagenesAvancesProyectos\" />
+    <Folder Include="js\lib\" />
+    <Folder Include="login\js\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="admin\Web.config" />
+    <Content Include="admin\fonts\!AFONT_LIGHT.otf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="admin\fonts\segoeui.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="admin\fonts\SEGOEUIB.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="admin\fonts\SEGOEUII.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="admin\fonts\SEGOEUIL.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="admin\fonts\SEGOEUISL.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="admin\fonts\SEGOEUIZ.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="admin\fonts\SEGUIBL.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="admin\fonts\SEGUIBLI.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="admin\fonts\SEGUILI.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="admin\fonts\SEGUISB.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="admin\fonts\SEGUISBI.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="admin\fonts\SEGUISLI.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="admin\fonts\Ubuntu-R.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="admin\fonts\Ubuntu-RI.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="admin\fonts\weblysleekuil.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="admin\fonts\weblysleekuisl.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="archivos\Hammerburg,Glen3512ELoweAve12-30-10.pdf" />
+    <None Include="archivos\Hernandez,Robert1524EastVassar11-2-09.pdf" />
+    <None Include="archivos\LISTADO DE CLIENTES OFICINA CALIFORNIA.pdf" />
+    <None Include="archivos\Olivarez,Michael&amp;Ofelia1513N.ValenciaCT11-17-09.pdf" />
+    <None Include="assets\calculadora\css\bootstrap-theme.css.map">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="assets\calculadora\css\bootstrap.css.map">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="assets\css\bootstrap.min.css.map" />
+    <None Include="assets\fonts\fontawesome-webfont3e6e.eot">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="assets\fonts\fontawesome-webfont3e6e.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="assets\fonts\fontawesome-webfont3e6e.woff">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="assets\fonts\fontawesome-webfont3e6e.woff2">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="assets\fonts\fontawesome-webfontd41d.eot">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="assets\fonts\glyphicons-halflings-regular.eot">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="assets\fonts\glyphicons-halflings-regular.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="assets\fonts\glyphicons-halflings-regular.woff">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="assets\fonts\glyphicons-halflings-regular.woff2">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="assets\fonts\glyphicons-halflings-regulard41d.eot">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="assets\font\IcoMoon.eot">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="assets\font\IcoMoon.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="assets\font\IcoMoon.woff">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="calculadora.php" />
+    <None Include="Easy-jQuery-Lightbox-Plugin-For-Image-Gallery-ion-zoom\flujo-de-efectivo.php" />
+    <None Include="Easy-jQuery-Lightbox-Plugin-For-Image-Gallery-ion-zoom\ganancias-de-capital.php" />
+    <None Include="Easy-jQuery-Lightbox-Plugin-For-Image-Gallery-ion-zoom\ion-zoom.jquery.json" />
+    <None Include="Easy-jQuery-Lightbox-Plugin-For-Image-Gallery-ion-zoom\readme.md" />
+    <None Include="fancy\demo\ganancias_gal1.php" />
+    <None Include="fonts\!AFONT_LIGHT.otf" />
+    <None Include="fonts\segoeui.ttf" />
+    <None Include="fonts\SEGOEUIB.TTF" />
+    <None Include="fonts\SEGOEUII.TTF" />
+    <None Include="fonts\SEGOEUIL.TTF" />
+    <None Include="fonts\SEGOEUISL.TTF" />
+    <None Include="fonts\SEGOEUIZ.TTF" />
+    <None Include="fonts\SEGUIBL.TTF" />
+    <None Include="fonts\SEGUIBLI.TTF" />
+    <None Include="fonts\SEGUILI.TTF" />
+    <None Include="fonts\SEGUISB.TTF" />
+    <None Include="fonts\SEGUISBI.TTF" />
+    <None Include="fonts\SEGUISLI.TTF" />
+    <None Include="fonts\Ubuntu-R.ttf" />
+    <None Include="fonts\Ubuntu-RI.ttf" />
+    <None Include="fonts\weblysleekuil.ttf" />
+    <None Include="fonts\weblysleekuisl.ttf" />
+    <None Include="galeria1_.php" />
+    <None Include="galeria_casas\ganancias-de-capitalbootstrap.php" />
+    <None Include="Galeria_resp\.htaccess" />
+    <None Include="Galeria_resp\app\styles\fonts.less" />
+    <None Include="Galeria_resp\package.json" />
+    <None Include="Galeria_resp\README.md" />
+    <None Include="ganancias-de-capital.php" />
+    <None Include="ganancias-de-capital2.php" />
+    <None Include="ganancias-de-capital3.php" />
+    <None Include="ganancias-de-capitalboot.php" />
+    <None Include="ganancias-de-capitalbootstrap.php" />
+    <None Include="ganancias-de-capitaldemo.php" />
+    <None Include="ganancias-de-capital_1.php" />
+    <None Include="ganancias_galeria1.php" />
+    <None Include="index.php" />
+    <Content Include="inversionista\Web.config" />
+    <None Include="inversionista\css\bootstrap-grid.css.map" />
+    <None Include="inversionista\css\bootstrap-grid.min.css.map" />
+    <None Include="inversionista\css\bootstrap-reboot.css.map" />
+    <None Include="inversionista\css\bootstrap-reboot.min.css.map" />
+    <None Include="inversionista\css\bootstrap.css.map" />
+    <None Include="inversionista\css\bootstrap.min.css.map" />
+    <None Include="inversionista\js\bootstrap.bundle.js.map" />
+    <None Include="inversionista\js\bootstrap.bundle.min.js.map" />
+    <None Include="inversionista\js\bootstrap.js.map" />
+    <None Include="inversionista\js\bootstrap.min.js.map" />
+    <None Include="inversionista\webfonts\fa-brands-400.eot" />
+    <None Include="inversionista\webfonts\fa-brands-400.ttf" />
+    <None Include="inversionista\webfonts\fa-brands-400.woff" />
+    <None Include="inversionista\webfonts\fa-brands-400.woff2" />
+    <None Include="inversionista\webfonts\fa-regular-400.eot" />
+    <None Include="inversionista\webfonts\fa-regular-400.ttf" />
+    <None Include="inversionista\webfonts\fa-regular-400.woff" />
+    <None Include="inversionista\webfonts\fa-regular-400.woff2" />
+    <None Include="inversionista\webfonts\fa-solid-900.eot" />
+    <None Include="inversionista\webfonts\fa-solid-900.ttf" />
+    <None Include="inversionista\webfonts\fa-solid-900.woff" />
+    <None Include="inversionista\webfonts\fa-solid-900.woff2" />
+    <None Include="negocios\archivos\ESTADO DE CUENTA FINANZAS CAPITAL USA LLC.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="negocios\archivos\FINANZAS CAPITAL USA LLC.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="negocios\archivos\Hammerburg,Glen3512ELoweAve12-30-10.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="negocios\archivos\Hernandez,Robert1524EastVassar11-2-09.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="negocios\archivos\JOINT VENTURE GANANCIAS DE CAPITAL.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="negocios\archivos\LICENCIA DE BROKER REAL ESTATE SOCIO.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="negocios\archivos\LISTADO DE CLIENTES OFICINA CALIFORNIA.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="negocios\archivos\Olivarez,Michael&amp;Ofelia1513N.ValenciaCT11-17-09.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="negocios\archivos\PODER SOCIOS CALIFORNIA USA 2015.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="negocios\archivos\PODER SOCIOS CALIFORNIA USA 2017.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="negocios\archivos\SOCIOS CAPITAL FINANCIERA 2015.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="negocios\archivos\SOCIOS CAPITAL FINANCIERA USA 2017.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <Content Include="negocios\Web.config" />
+    <None Include="proyectos.php" />
+    <None Include="Sliders\flujo-de-efectivo.php" />
+    <None Include="Sliders\GNU.md" />
+    <None Include="Sliders\README.md" />
+    <None Include="webfonts\fa-brands-400.eot" />
+    <None Include="webfonts\fa-brands-400.ttf" />
+    <None Include="webfonts\fa-brands-400.woff" />
+    <None Include="webfonts\fa-brands-400.woff2" />
+    <None Include="webfonts\fa-regular-400.eot" />
+    <None Include="webfonts\fa-regular-400.ttf" />
+    <None Include="webfonts\fa-regular-400.woff" />
+    <None Include="webfonts\fa-regular-400.woff2" />
+    <None Include="webfonts\fa-solid-900.eot" />
+    <None Include="webfonts\fa-solid-900.ttf" />
+    <None Include="webfonts\fa-solid-900.woff" />
+    <None Include="webfonts\fa-solid-900.woff2" />
+    <None Include="webmaster\smallslide\.gitignore" />
+    <None Include="webmaster\smallslide\Changelog.md" />
+    <None Include="webmaster\smallslide\README.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CAPITALFINANCIERA.APP.BL\CAPITALFINANCIERA.APP.BL.csproj">
+      <Project>{8A4A2B9A-D85E-4B72-9E7F-B2C75A40F1C4}</Project>
+      <Name>CAPITALFINANCIERA.APP.BL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CAPITALFINANCIERA.APP.EL\CAPITALFINANCIERA.APP.EL.csproj">
+      <Project>{01859352-899C-4A2D-BB6E-69A31EC40C12}</Project>
+      <Name>CAPITALFINANCIERA.APP.EL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>42864</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost/CAPITALFINANCIERAUSA_WEBPAGE</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

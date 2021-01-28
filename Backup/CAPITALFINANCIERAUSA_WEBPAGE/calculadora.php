@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title></title>
+
+    <meta charset="UTF-8" />
+
+ <link rel="icon" type="image/png" href="assets/img/logo/favicon.png" />
+
+
+
+    <meta name="author" content="Ing. Rodrigo Josafat Osorno Colin - 525.Marketing">
+
+    <meta name="keywords" content="financiera, financiamiento, inversion, inversiones, interes, capital, intereses, redimiento, ahorro, dinero, inflación">
+
+    <meta name="description" content="Empresa financiera especializada en inversiones sobre el mercado de bienes raíces en Estados Unidos con presencia en la ciudad de Aguascalientes, Cd. de México y Guadalajara y en el extranjero en Fresno y Los Ángeles California.">
+
+    <!-- METAS FACEBOOK -->
+
+    
+
+    <meta name="msvalidate.01" content="58D129AE5DB2F0690056D2627FFADFD7" />
+
+
+
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+
+
+
+
+
+    <!-- Latest compiled and minified CSS -->
+
+    <link rel="Stylesheet" href="assets/calculadora/css/bootstrap.min.css" />
+
+    <link rel="Stylesheet" href="assets/calculadora/css/font-awesome.min.css" />
+
+    <link rel="Stylesheet" href="assets/calculadora/css/bootstrap-slider.min.css" />
+
+    <link rel="Stylesheet" href="assets/calculadora/css/full-slider.css" />
+
+    <link rel="Stylesheet" href="assets/calculadora/css/financiera.css" />
+
+
+
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" />
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+   
+
+   <link rel="stylesheet" type="text/css" href="assets/css/custom.css">
+
+    
+
+    
+
+</head>
+
+<body>
+
+<div class="col-md-12" style="position: absolute;z-index: 999;">
+
+    <a href="#" onclick="location.href='index'" class="btn-volver">Volver a página de inicio</a>
+
+</div>   
+
+<header id="principalCarousel" class="carousel slide">
+
+        <div  class="content-calc">
+
+            <!-- <div class="row quita-margin-row visible-md visible-lg">
+
+                <div class="col-xs-12 col-sm-12 col-md-8 fondo-calculadora-totales">
+
+                    <img alt="divisor" src="assets/calculadora/icons/divisor2.png" class="img-responsive" style="margin-top:10px;" />
+
+                </div>
+
+            </div> -->
+
+            <div class="micont">
+
+            <div class="row quita-margin-row ajuste">
+
+                <div class="col-xs-12 col-sm-12 col-md-4 fondo-calculadora">
+
+                    <div class="calculadora-titulo">
+
+                        <h3>¿CUÁNTO DINERO DESEAS INVERTIR EN PROPIEDADES EN EUA EN DOLARES?</h3>
+
+                        <hr />
+
+                        <h1 class="stroke">MONTO DEL INVERSIONISTA</h1>
+
+                    </div>
+
+                    <div style="text-align:center; width:100%;">
+
+                        <div class="calculadora-iconos">
+
+                            <div style="width:40px; height:50px; display:inline-block;">
+
+                                <!-- <input type="image" src="assets/calculadora/icons/icono-menos.png" onClick="CalculadoraMenosMonto()" /> -->
+
+                            </div>
+
+                            <div class="texto_tiempo">
+
+                                <input id="calculadora_monto" type="number" min="5000" max="10000" value="50000" step="1" style="width:65px; font-size:12pt; padding-left:5px; position:relative; top:-20px;" />
+
+                                <input id="btnCalcular" type="button" value="Calcular" style="position:relative; top:-20px;" onClick="CalcuadoraMonto()" />
+
+                            </div>
+
+                            <!-- <input type="image" src="assets/calculadora/icons/icono-mas.png" onClick="CalculadoraMasMonto()" /> -->
+
+                        </div>
+
+                        <div class="calculadora-sliderbar">
+
+                            <input
+
+                                id="monto"
+
+                                type="text"
+
+                                style="width:350px;"
+
+                                data-slider-min="5000"
+
+                                data-slider-max="90000"
+
+                                data-slider-step="5000"
+
+                                data-slider-value="50000"
+
+                                data-slider-orientation="horizontal"
+
+                                data-slider-ticks-snap-bounds="5000"
+
+                                data-slider-ticks="[5000, 10000, 25000, 50000, 90000]" />
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="row quita-margin-row">
+
+                <div class="col-xs-12 col-sm-12 col-md-8 calculadora-total fondo-calculadora-totales">
+
+                    <div class="calculadora-total-centrar">
+
+                        <div class="tist">
+
+                            <span class="uno stroke">MONTO INICIAL</span>
+
+                            <span class="dos stroke">GANANCIA</span>
+
+                            <span class="tres stroke" >TOTAL*</span>
+
+                        </div>
+
+                        <div class="calculadora-contenedores">
+
+                            <img alt="contenedor-prestamista" src="assets/calculadora/icons/contenedor-total.png" />
+
+                            <img alt="contenedor-mas" src="assets/calculadora/icons/contenedor-total-mas.png" class="sep" />
+
+                            <img alt="contenedor-interes" src="assets/calculadora/icons/contenedor-total.png" />
+
+                            <img alt="contenedor-igual" src="assets/calculadora/icons/contenedor-total-igual.png" class="sep" />
+
+                            <img alt="contenedor-total" src="assets/calculadora/icons/contenedor-total.png" />
+
+                            <div class="calculadora-valores">
+
+                                <span id="sPrestamo">$50,000</span>
+
+                                <span id="sInteres">$15,000</span>
+
+                                <span id="sTotal">$65,000</span>
+
+                            </div>
+
+                        </div>
+
+                        <p class="nota" ><font face="serif">* Total a 12 meses. Cada proyecto inmobiliario en promedio dura 6 meses, por lo que las ganancias están expresadas en dos proyectos inmobiliarios consecutivos.
+
+</font></p>
+
+ <p class="nota"><font face="serif">* Recuerda que tu inversión es realizada en dólares, por lo que estarás protegido contra devaluaciones y beneficiándote además del tipo de cambio.</font>
+
+
+
+</p>
+
+                       
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            </div>
+
+        </div>
+
+        <!-- Indicators -->
+
+        <ol class="carousel-indicators">
+
+            <li data-target="#principalCarousel" data-slide-to="0" class="active"></li>
+
+            <li data-target="#principalCarousel" data-slide-to="1"></li>
+
+        </ol>
+
+
+
+        <!-- Wrapper for Slides -->
+
+        <div class="carousel-inner">
+
+            <div class="item active">
+
+                <!-- Set the first background image using inline CSS below. -->
+
+                <div class="fill" style="background-image:url('assets/calculadora/galeria/1.jpg');"></div>
+
+                <div class="carousel-caption">
+
+                </div>
+
+            </div>
+
+            <div class="item">
+
+                <!-- Set the second background image using inline CSS below. -->
+
+                <div class="fill" style="background-image:url('assets/calculadora/galeria/2.jpg');"></div>
+
+                <div class="carousel-caption">
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+        <script type="text/javascript" src="assets/calculadora/js/jquery-1.11.3.min.js"></script>
+
+    <script type="text/javascript" src="assets/calculadora/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="assets/calculadora/js/bootstrap-slider.min.js"></script>
+
+    <script type="text/javascript" src="assets/calculadora/js/financieraexpansion.js"></script>
+
+  
+
+</body>
+
+</html>
+
+
+

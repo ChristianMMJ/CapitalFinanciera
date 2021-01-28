@@ -1,0 +1,67 @@
+.text-center{
+	text-align: center;
+}
+
+.mihead{
+	padding: 120px 0;
+    background: url('../img/contacto/contacto.jpg');
+}
+
+.mihead h3, .mihead a, .mihead li{
+	color: #fff;
+}
+
+.slicknav_menu{
+	margin-top: 20px;
+}
+
+@media only screen and (max-width: 767px){
+	.service-box {
+	    background: #fff url(../img/inicio/beneficios.jpg) no-repeat scroll center 0;
+	}
+}
+
+.btn-volver {
+    float: right;
+    padding: 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+table.table {
+    width: 50%;
+    margin: 40px auto;
+    font-size: 20px;
+}
+
+@media only screen and (max-width: 767px){
+
+.header-top-language, .header-top-right {
+    margin: 0 !important;
+}
+
+.section_15 {
+    padding: 0 !important;
+}
+
+.single-top-right {
+    margin: 1px 0;
+}
+
+}
+
+.mlink:hover{
+    color: #dfb781;
+}
+
+
+
+@media  (max-width: 320px){
+    .single-footer-insta{
+    display: none !important;
+}
+}
+
+.tienda {
+    margin: 0 17%;
+}

@@ -1,0 +1,1116 @@
+﻿@font-face {
+        font-family: 'BebasNeueRegular';
+        src: url('../fonts/BebasNeue-webfont.ttf') format('truetype');
+}
+
+@font-face {
+        font-family: 'Ubuntu';
+        src: url('../fonts/Ubuntu-R.ttf') format('truetype');
+}
+
+@font-face {
+        font-family: 'GothamBook';
+        src: url('../fonts/GothamBook.ttf') format('truetype');
+}
+
+@font-face {
+        font-family: 'GothamLight';
+        src: url('../fonts/GothamLight.ttf') format('truetype');
+}
+
+body
+{
+    font-family: 'BebasNeueRegular';
+    background-color: #F3F3F5;
+}
+
+blockquote {
+    border-left: 0px;
+}
+
+/******************** Inicio estilos para el menu ********************/
+.navbar-default
+{
+    background-color: #F3F3F5;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #000;
+    font-weight:100;
+    font-size:14pt;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover
+{
+    color: #FFF;
+    background-color: #632C90;
+}
+
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+    color: #FFF;
+    background-color: #632C90;
+}
+
+.navbar-brand>img
+{
+    margin-top: -10px;
+}
+
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover
+{
+    color: #FFF;
+    background-color: #632C90;
+}
+
+.dropdown-menu>li>a
+{
+    font-weight:100;
+    font-size:14pt;
+}
+
+.dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover
+{
+    color: #FFF;
+    background-color: #632C90;
+    font-weight:100;
+    font-size:14pt;
+}
+
+/***************************** Final Menu ****************************/
+
+/******************** Inicio Textos Imagenes ********************/
+
+.inicio
+{
+    margin-bottom:20px;
+    font-size:30pt;
+    background: #FFF;
+    background: rgba(255,255,255,0.7);
+    color: #632C90;
+}
+
+@media(max-width:1286px)
+{
+    .inicio
+    {
+        font-size:30pt;
+    }
+}
+
+@media(max-width:1171px)
+{
+    .inicio
+    {
+        font-size:25pt;
+    }
+}
+
+@media(max-width:991px)
+{
+    .inicio
+    {
+        margin-top:50px;
+    }
+}
+
+@media(max-width:804px)
+{
+    .inicio
+    {
+        font-size:20pt;
+    }
+}
+
+@media(max-width:372px)
+{
+    .inicio
+    {
+        font-size:15pt;
+    }
+}
+
+@media screen and (max-height:591px)
+{
+    .inicio
+    {
+        font-size:45pt;
+    }
+}
+
+/******************** Final Textos Imagenes ********************/
+
+/******************** Estilos para el carousel ********************/
+
+.carousel-indicators {
+    bottom: -10px;
+}
+
+.carousel-indicators li
+{
+    background-color: #0d334e;
+    width:20px;
+    height:20px;
+}
+
+.carousel-indicators .active
+{
+    background-color: #edb87f;
+    width:20px;
+    height:20px;
+}
+
+@media only screen and (max-width: 400px)
+{
+    .carousel-indicators li {
+        width: 10px;
+        height: 10px;
+    }
+    
+    .carousel-indicators .active{
+        width: 10px;
+        height: 10px;
+    }
+}
+
+
+@media screen and (max-width:991px) and (min-height:591px)
+{
+    .carousel, .item, .active {
+        height: 150%;
+    }
+    
+    .carousel-caption 
+    {
+        bottom:0px;
+    }
+}
+
+@media screen and (max-width:991px) and (max-height:590px)
+{
+    .carousel, .item, .active {
+        height: 150%;
+    }
+    
+    .carousel-caption 
+    {
+        bottom:455px;
+    }
+}
+
+@media screen and (max-width:991px) and (max-height:580px)
+{
+    .carousel, .item, .active {
+        height: 160%;
+    }
+    
+    .carousel-caption 
+    {
+        bottom:570px;
+    }
+}
+
+@media screen and (max-width:991px) and (max-height:555px)
+{
+    .carousel, .item, .active {
+        height: 170%;
+    }
+    
+    .carousel-caption 
+    {
+        bottom:670px;
+    }
+}
+
+@media screen and (max-width:991px) and (max-height:525px)
+{    
+    .carousel-caption 
+    {
+        bottom:635px;
+    }
+}
+
+@media screen and (max-width:991px) and (max-height:515px)
+{    
+    .carousel-caption 
+    {
+        bottom:620px;
+    }
+}
+
+@media screen and (max-width:991px) and (max-height:507px)
+{    
+    .carousel, .item, .active {
+        height: 180%;
+    }
+    
+    .carousel-caption 
+    {
+        bottom:740px;
+    }
+}
+
+@media screen and (max-width:991px) and (max-height:490px)
+{    
+    .carousel-caption 
+    {
+        bottom:715px;
+    }
+}
+
+@media screen and (max-width:991px) and (max-height:482px)
+{
+    .carousel, .item, .active {
+        height: 190%;
+    }
+    
+    .carousel-caption 
+    {
+        bottom:835px;
+    }
+}
+
+@media screen and (max-width:991px) and (max-height:465px)
+{
+    .carousel-caption 
+    {
+        bottom:805px;
+    }
+}
+
+@media screen and (max-width:991px) and (max-height:457px)
+{
+    .carousel, .item, .active {
+        height: 200%;
+    }
+    
+    .carousel-caption 
+    {
+        bottom:925px;
+    }
+}
+
+@media screen and (max-width:991px) and (max-height:442px)
+{    
+    .carousel-caption 
+    {
+        bottom:895px;
+    }
+}
+
+@media screen and (max-width:991px) and (max-height:435px)
+{
+    .carousel, .item, .active {
+        height: 210%;
+    }
+     
+    .carousel-caption 
+    {
+        bottom:1015px;
+    }
+}
+
+@media screen and (max-width:991px) and (max-height:422px)
+{
+    .carousel-caption 
+    {
+        bottom:985px;
+    }
+}
+
+@media screen and (max-width:991px) and (max-height:415px)
+{
+    .carousel, .item, .active {
+        height: 220%;
+    }
+    
+    .carousel-caption 
+    {
+        bottom:1110px;
+    }
+}
+
+@media screen and (max-width:991px) and (max-height:405px)
+{
+    .carousel-caption 
+    {
+        bottom:1075px;
+    }
+}
+
+@media screen and (max-width:991px) and (max-height:397px)
+{
+    .carousel-caption 
+    {
+        bottom:1060px;
+    }
+}
+
+@media screen and (max-width:991px) and (max-height:390px)
+{
+    .carousel, .item, .active {
+        height: 230%;
+    }
+    
+    .carousel-caption 
+    {
+        bottom:1175px;
+    }
+}
+
+@media screen and (max-width:991px) and (max-height:380px)
+{
+    .carousel-caption 
+    {
+        bottom:1140px;
+    }
+}
+
+@media screen and (max-width:991px) and (max-height:373px)
+{
+    .carousel-caption 
+    {
+        bottom:1120px;
+    }
+}
+
+@media screen and (max-width:991px) and (max-height:370px)
+{
+    .carousel, .item, .active {
+        height: 240%;
+    }
+    
+    .carousel-caption 
+    {
+        bottom:1250px;
+    }
+}
+
+@media screen and (max-width:991px) and (max-height:360px)
+{
+    .carousel-caption 
+    {
+        bottom:1220px;
+    }
+}
+
+@media screen and (max-width:991px) and (max-height:355px)
+{
+    .carousel, .item, .active {
+        height: 250%;
+    }
+    
+    .carousel-caption 
+    {
+        bottom:1340px;
+    }
+}
+
+@media screen and (max-width:991px) and (max-height:346px)
+{
+    .carousel-caption 
+    {
+        bottom:1000px;
+    }
+}
+
+@media screen and (max-width:991px) and (max-height:322px)
+{
+    .carousel, .item, .active {
+        height: 260%;
+    }
+}
+
+@media screen and (max-width:991px) and (max-height:310px)
+{
+    .carousel, .item, .active {
+        height: 270%;
+    }
+}
+
+@media screen and (max-width:991px) and (max-height:298px)
+{
+    .carousel, .item, .active {
+        height: 280%;
+    }
+}
+
+@media screen and (max-width:991px) and (max-height:287px)
+{
+    .carousel, .item, .active {
+        height: 290%;
+    }
+}
+
+@media screen and (max-width:991px) and (max-height:277px)
+{
+    .carousel, .item, .active {
+        height: 300%;
+    }
+}
+
+@media screen and (max-width:372px) and (max-height:590px)
+{    
+    .carousel-caption 
+    {
+        bottom:440px;
+    }
+}
+
+@media screen and (max-width:372px) and (max-height:589px)
+{    
+    .carousel-caption 
+    {
+        bottom:6000px;
+    }
+}
+
+@media screen and (max-width:372px) and (max-height:340px)
+{    
+    .carousel, .item, .active {
+        height: 270%;
+    }
+}
+
+@media screen and (max-width:372px) and (max-height:315px)
+{    
+    .carousel, .item, .active {
+        height: 280%;
+    }
+}
+
+@media screen and (max-width:372px) and (max-height:305px)
+{    
+    .carousel, .item, .active {
+        height: 290%;
+    }
+}
+
+@media screen and (max-width:372px) and (max-height:295px)
+{    
+    .carousel, .item, .active {
+        height: 300%;
+    }
+}
+
+@media screen and (max-width:372px) and (max-height:285px)
+{    
+    .carousel, .item, .active {
+        height: 310%;
+    }
+}
+
+@media screen and (min-width:992px) and (min-height:590px)
+{    
+    .carousel-caption 
+    {
+        bottom:10px;
+    }
+}
+
+@media screen and (min-width:992px) and (max-height:589px)
+{    
+    .carousel-caption 
+    {
+        bottom:-100px;
+    }
+}
+
+@media screen and (min-width:992px) and (max-height:530px)
+{    
+    .carousel, .item, .active {
+        height: 110%;
+    }   
+}
+
+@media screen and (min-width:992px) and (max-height:490px)
+{    
+    .carousel, .item, .active {
+        height: 120%;
+    }   
+}
+
+@media screen and (min-width:992px) and (max-height:445px)
+{    
+    .carousel, .item, .active {
+        height: 130%;
+    }   
+}
+
+@media screen and (min-width:992px) and (max-height:410px)
+{    
+    .carousel, .item, .active {
+        height: 140%;
+    }   
+}
+
+@media screen and (min-width:992px) and (max-height:380px)
+{    
+    .carousel, .item, .active {
+        height: 150%;
+    }   
+}
+
+@media screen and (min-width:992px) and (max-height:355px)
+{    
+    .carousel, .item, .active {
+        height: 160%;
+    }   
+}
+
+@media screen and (min-width:992px) and (max-height:335px)
+{    
+    .carousel, .item, .active {
+        height: 170%;
+    }   
+}
+
+@media screen and (min-width:992px) and (max-height:315px)
+{    
+    .carousel, .item, .active {
+        height: 180%;
+    }   
+}
+
+@media screen and (min-width:992px) and (max-height:295px)
+{    
+    .carousel, .item, .active {
+        height: 190%;
+    }   
+}
+
+@media screen and (min-width:992px) and (max-height:280px)
+{    
+    .carousel, .item, .active {
+        height: 200%;
+    }   
+}
+
+@media screen and (min-width:992px) and (max-height:265px)
+{    
+    .carousel, .item, .active {
+        height: 210%;
+    }   
+}
+
+/******************** Inicio SliderBar ********************/
+.slider-selection {
+	background-image: linear-gradient(to bottom,#25A9E1 0,#25A9E1 100%);
+}
+
+.slider-track-low, .slider-track-high {
+    background-color: #0d334e;
+}
+
+.slider-tick 
+{
+    background-image: linear-gradient(to bottom,#0d334e 0,#0d334e 100%);
+    opacity:1;
+}
+
+.slider-selection.tick-slider-selection
+{
+    background-image: linear-gradient(to bottom,#edb87f 0,#edb87f 100%);
+}
+
+.slider-tick.in-selection 
+{
+    background-image: linear-gradient(to bottom,#edb87f 0,#edb87f 100%);
+}
+
+.slider-handle.round {
+    border-radius: 0%;
+}
+
+.slider-handle
+{
+    background: transparent none;
+    background-image:url('../icons/slider-handler.png');
+    height:30px;
+    margin-top:-10px !important;
+    opacity:1;
+}
+
+.slider.slider-horizontal .slider-tick-label-container {
+    margin-top: 28px;
+    font-size:12pt;
+}
+
+.slider.slider-horizontal .slider-tick-label-container .slider-tick-label
+{
+    width: 60px !important;
+}
+
+#etiqueta1
+{
+    margin-left: -80px;
+    margin-bottom:2px;
+}
+
+#etiqueta2
+{
+    margin-left: 40px;
+}
+
+#etiqueta3
+{
+    margin-left: 115px;
+}
+
+.slider .tooltip.top {
+    margin-top: -40px;
+}
+
+.calculadora-sliderbar
+{
+    /*margin-left:10px;*/
+    margin-bottom: 30px;
+}
+/******************** Final SliderBar ********************/
+
+/********************* Inicio Calculadora Titulos *********************/
+@media(max-width:991px)
+{
+    .ajuste
+    {
+        margin-top:100px;
+    }
+}
+
+.quita-margin-row
+{
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.nota
+{
+    margin:20px 0;
+	}
+.nota p 
+{
+  font-family: serif;
+}
+	 
+
+.stroke
+{
+    text-align: center;
+    color: #0d334e;
+    margin: 14px 0;
+}
+
+.fondo-calculadora
+{
+   /* background: #000;
+    background: rgba(0,0,0,0.25);
+    height:240px;*/
+}
+
+.fondo-calculadora-totales
+{
+    /*background: #000;
+    background: rgba(0,0,0,0.25);*/
+}
+
+.fondo-calculadora-titulo
+{
+}
+
+.calculadora-titulo
+{
+    width:100%;
+    text-align:center;
+        margin-left: 23px;
+}
+
+h3, h2, h4, h5
+{
+    color: #0d334e;
+    font-family: 'BebasNeueRegular';
+}
+
+h1
+{
+    color: #25A9E1;
+    margin-top: 5px;
+    margin-bottom: 0px;
+    font-family: 'BebasNeueRegular';
+}
+
+hr
+{
+    border-top: 4px solid #edb87f;
+    width:280px;
+    margin-top: 20px;
+}
+
+/*CALCULADORA mayor y menor*/
+.calculadora-iconos
+{
+    height:57px;
+    width:100%;
+    margin-bottom: 20px;
+}
+
+.calculadora-iconos .menos
+{
+    margin-right:240px;
+}
+
+.texto_tiempo
+{
+    width:240px;
+    display:inline-block;
+}
+
+@media(max-width:1080px) {
+    .calculadora-iconos img.menos
+    {
+        margin-right:210px;
+    }
+
+    .texto_tiempo
+    {
+        width:210px;
+        display:inline-block;
+    }
+}
+
+#sTiempo
+{
+    font-family: 'BebasNeueRegular';
+    color: #25A9E1;
+    font-size:30pt;
+}
+
+/*CALCULADORA total*/
+/*.calculadora-total
+{
+	padding-bottom:20px;
+}*/
+
+.carousel-indicators{
+    display: none;
+}
+
+.calculadora-total-centrar
+{
+    width:326px;
+    /*margin:0 auto;*/
+	margin-left:16px;
+}
+
+/*.calculadora-total span.uno
+{
+    color:#25A9E1;
+    font-family: 'BebasNeueRegular';
+    font-size:15px;
+}*/
+
+.calculadora-total span.dos
+{
+    font-family: 'BebasNeueRegular';
+    margin-left: -27px;
+}
+
+.calculadora-total span.tres
+{
+    font-family: 'BebasNeueRegular';
+    font-size: 25px;
+}
+
+.calculadora-contenedores
+{
+	width:326px;
+	position:relative;
+}
+
+
+.calculadora-valores
+{
+    position:absolute;
+    top:25px;
+    left:0;
+    font-family: 'BebasNeueRegular';
+    font-size:15pt;
+}
+
+.calculadora-valores span[id=sPrestamo], span[id=sInteres]
+{
+    display:inline-block;
+    width:89px;
+    text-align:center;
+    margin-right:25px;
+}
+
+.calculadora-valores span[id=sTotal]
+{
+    display:inline-block;
+    width:84px;
+    text-align:center;
+    font-size:15pt;
+    margin-left: -2px;
+}
+
+/*Sección perfil cliente*/
+section.perfilcliente
+{
+    background-color: #632C90;
+}
+
+.perfilcliente h1
+{
+	font-size: 35pt;
+	color:#FFF;
+}
+
+.perfilprestamista h1
+{
+    font-size: 45pt;
+    color:#FFF;
+}
+
+.perfilcliente h3
+{
+    color:#FFF;
+}
+
+section.perfilprestamista
+{
+    /*background-color: #25A9E1;*/
+}
+
+.perfilprestamista h1
+{
+	color:#25A9E1;
+	text-align: justify;
+}
+
+.perfilprestamista h3
+{
+    color:#25A9E1;
+}
+
+/******************** Inicio pie de página *********************/
+.footer-image
+{
+    display:block;
+    width: 100%;
+    margin-top: 50px;
+    text-align: center;
+    background: url('../img/piepagina/fondopie.png') no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.footer-image .footer-contenedor
+{
+    padding-left:15px;
+    padding-right:15px;
+    font-family: 'BebasNeueRegular';
+    font-size:14pt;
+    color:#632C90;
+}
+
+/*=========================
+  Icons
+ ================= */
+
+/* footer social icons */
+.footer-image .footer-contenedor ul.social-network
+{
+	list-style: none;
+	display: inline;
+	margin-left:0 !important;
+	padding: 0;
+}
+
+.footer-image .footer-contenedor ul.social-network li
+{
+	display: inline;
+	margin: 0 2px;
+}
+
+/* footer social icons */
+.social-network a.icoFacebook:hover
+{
+	background-color:#FFF;
+}
+
+.social-network a.icoTwitter:hover
+{
+	background-color:#FFF;
+}
+
+.social-network a.icoYoutube:hover
+{
+	background-color:#FFF;
+}
+
+.social-network a.icoFacebook:hover i, .social-network a.icoTwitter:hover i,
+.social-network a.icoYoutube:hover i
+{
+	color:#632C90;
+}
+
+a.socialIcon:hover, .socialHoverClass {
+	color:#44BCDD;
+}
+
+.social-circle li a
+{
+	display:inline-block;
+	position:relative;
+	margin:150px auto 20px auto;
+	-moz-border-radius:50%;
+	-webkit-border-radius:50%;
+	border-radius:50%;
+	text-align:center;
+	width: 80px;
+	height: 80px;
+	font-size:20px;
+	background-color: #632C90;
+}
+
+.social-circle li i
+{
+	margin:0;
+	line-height:80px;
+	text-align: center;
+}
+
+.social-circle li a:hover i, .triggeredHover
+{
+	-moz-transform: rotate(360deg);
+	-webkit-transform: rotate(360deg);
+	-ms--transform: rotate(360deg);
+	transform: rotate(360deg);
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	-ms-transition: all 0.2s;
+	transition: all 0.2s;
+}
+
+.social-circle i
+{
+	color: #FFF;
+	-webkit-transition: all 0.8s;
+	-moz-transition: all 0.8s;
+	-o-transition: all 0.8s;
+	-ms-transition: all 0.8s;
+	transition: all 0.8s;
+}
+
+.footer-image .footer-contenedor .desarrollado
+{
+    color:#FFF;
+}
+
+/******************** Fin pie de página *********************/
+/******************** Inicio CONTACTO **********************/
+.contacto-header
+{
+    background-color: #F3F3F5;
+    color: #25A9E1;
+    height: 70px;
+    font-size: 27px;
+    padding: 10px;
+}
+
+.contacto-direccion
+{
+    font-size: 14pt;
+}
+
+.btn-primary {
+    color: #FFF;
+    background-color: #25A9E1;
+    border-color: #D6E7F7;
+}
+
+.map
+{
+    min-width: 230px;
+    min-height: 225px;
+    width: 100%;
+    height: 100%;
+}
+/******************** Fin CONTACTO ************************/
+.tist{
+    display: flex;
+    justify-content: space-between;
+}
+
+.content-calc{
+            position:absolute; z-index:10; top:20px; left: 610px;
+        }
+
+@media only screen and (min-width: 320px) and (max-width: 1200px) { 
+        .content-calc{
+            position:absolute; z-index:10; top:20px; left: 0px;
+        }
+        .stroke {
+        font-size: 14px;
+}
+h3{
+    font-size: 14px;
+    }
+.calculadora-titulo {
+    width: 84%;
+}
+
+img {
+    width: 22%;
+}
+
+img.sep {
+    width: 7%;
+}
+
+.calculadora-valores span[id=sPrestamo], span[id=sInteres] {
+    width: 70px;
+}
+
+.stroke {
+    margin: 14px 10px;
+}
+
+.calculadora-total span.dos {
+    margin-left: -5px;
+}
+
+.nota {
+    font-size: 13px;
+    width: 270px;
+}
+
+.calculadora-iconos {
+    height: 57px;
+    width: 100%;
+    margin-bottom: 20px;
+    margin-left: -45px;
+}
+
+.slider.slider-horizontal {
+    width: 290px !important;
+    height: 20px;
+    margin-left: -53px;
+}
+
+#etiqueta2 {
+    margin-left: 22px;
+}
+
+#etiqueta1 {
+    margin-left: -80px;
+    margin-bottom: 2px;
+}
+
+#etiqueta3 {
+    margin-left: 94px;
+}
+
+}
